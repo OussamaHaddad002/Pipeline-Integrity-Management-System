@@ -1,433 +1,480 @@
-# Pipeline Risk Assessment Dashboard
+# 🛢️ Pipeline Risk Assessment Dashboard
 
-A comprehensive pipeline integrity management system for the oil & gas industry, featuring real-time monitoring, AI-powered risk prediction, and interactive visualization.
+A comprehensive pipeline integrity management system designed for the oil & gas industry, featuring real-time monitoring, AI-powered risk prediction, and interactive data visualization. Built as a professional portfolio project demonstrating full-stack development capabilities.
 
-## 🚀 Features
+## ✨ Live Demo
 
-### Core Capabilities
-- **Interactive Map Visualization** - Real-time pipeline network display with risk-based color coding
-- **AI-Powered Risk Prediction** - Machine learning models for failure probability assessment
-- **Real-time Monitoring** - WebSocket-based live updates and alerts
-- **Comprehensive Risk Assessment** - Multi-factor risk scoring and analysis
-- **Spatial Analysis** - PostGIS-powered geographic queries and analysis
-- **Dashboard Analytics** - Key performance indicators and trend analysis
-- **Data Import/Export** - CSV and GeoJSON format support
-- **Mobile Responsive** - Optimized for field use on mobile devices
+🌐 **Frontend**: http://localhost:3000  
+� **API**: http://localhost:3001  
+📊 **Interactive Dashboard** with real pipeline data and AI predictions
 
-### Technical Excellence
-- **Production-Ready Architecture** - Microservices with Docker containerization
-- **Type Safety** - Full TypeScript implementation across frontend and backend
-- **Security First** - JWT authentication, input validation, rate limiting
-- **Performance Optimized** - Spatial indexing, caching, and efficient queries
-- **Scalable Design** - Horizontal scaling support with load balancing
-- **Comprehensive Testing** - Unit tests and integration test coverage
+## �🚀 Key Features
 
-## 🏗️ Architecture
+### 🎯 Core Functionality
+- **📍 Interactive Map Visualization** - Dynamic pipeline network display with risk-based color coding
+- **🤖 AI-Powered Risk Prediction** - Machine learning models calculating realistic failure probabilities (0.1% - 1.0%)
+- **⚡ Real-time Updates** - WebSocket-based live data streaming and alerts  
+- **📈 Comprehensive Analytics** - Multi-factor risk scoring with detailed breakdowns
+- **🗂️ CSV Data Processing** - Import and analyze pipeline inspection data
+- **📱 Responsive Design** - Optimized for desktop, tablet, and mobile devices
+
+### 💻 Technical Highlights
+- **🔷 Full TypeScript Stack** - Type safety across frontend, backend, and data layers
+- **🎨 Modern React UI** - Built with React 18+ using functional components and hooks
+- **🗄️ Robust Backend** - Node.js/Express API with comprehensive error handling
+- **📊 Advanced Visualization** - Interactive charts, graphs, and real-time data displays
+- **🔒 Security Implementation** - Authentication middleware, input validation, and CORS protection
+- **🐳 Docker Ready** - Containerized architecture for easy deployment
+
+## 🏗️ System Architecture
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend │    │  Node.js Backend │    │  Python AI/ML   │
-│   (TypeScript)   │◄──►│   (Express.js)   │◄──►│   Service       │
-│   Port: 3000     │    │   Port: 5000     │    │   Port: 8000    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                                 ▼
-                    ┌─────────────────┐
-                    │  PostgreSQL +   │
-                    │    PostGIS      │
-                    │   Port: 5432    │
-                    └─────────────────┘
+┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
+│   React Frontend    │    │   Node.js Backend   │    │    Sample Data      │
+│   TypeScript + Vite │◄──►│   Express + TypeScript│◄──►│   CSV Processing    │
+│   Port: 3000        │    │   Port: 3001        │    │   Risk Calculations │
+│   - Dashboard UI    │    │   - RESTful API     │    │   - AI Predictions  │
+│   - Risk Analysis   │    │   - WebSocket       │    │   - 10+ Pipelines   │
+│   - Data Viz        │    │   - Authentication  │    │   - Real Scenarios  │
+└─────────────────────┘    └─────────────────────┘    └─────────────────────┘
+```
+
+## 💡 What Makes This Special
+
+### 🎯 **Realistic Industry Data**
+- **10 Production-Quality Pipeline Records** with authentic specifications
+- **Real-world Risk Factors**: Age (7-47 years), corrosion rates, wall loss percentages
+- **Authentic Failure Probabilities**: 0.114% to 0.996% based on actual industry calculations
+- **Geographic Diversity**: Texas, Louisiana, North Dakota pipeline networks
+
+### 🧠 **Intelligent Risk Assessment**
+```typescript
+// AI-powered failure probability calculation
+const failureProbability = calculateRisk({
+  age: 30,              // Years in service
+  wallLoss: 12.5,       // Percentage degradation  
+  corrosionRate: 0.85,  // Mills per year
+  incidents: 1          // Historical failures
+});
+// Result: 0.48% annual failure probability
 ```
 
 ## 🛠️ Technology Stack
 
-### Frontend
-- **React 18+** with TypeScript for type-safe UI development
-- **Tailwind CSS** for responsive and modern styling
-- **Leaflet** for interactive map visualization
-- **Recharts** for data visualization and analytics
-- **Socket.io Client** for real-time updates
-- **Vite** for fast development and optimized builds
+### **Frontend** 🎨
+- **⚛️ React 18+** with TypeScript - Modern component architecture
+- **🎨 Tailwind CSS** - Utility-first styling with responsive design
+- **📊 Recharts** - Interactive data visualization and analytics
+- **🌐 WebSocket Client** - Real-time data streaming
+- **⚡ Vite** - Lightning-fast development and optimized builds
 
-### Backend
-- **Node.js** with Express.js framework
-- **TypeScript** for type safety and developer experience
-- **Socket.io** for WebSocket communication
-- **Winston** for structured logging
-- **Helmet** and security middleware
-- **Rate limiting** and CORS protection
+### **Backend** ⚙️  
+- **🟢 Node.js + Express.js** - RESTful API with TypeScript
+- **🔌 Socket.io** - Real-time bidirectional communication
+- **📝 Winston Logging** - Structured application logging
+- **🔒 Security Middleware** - Helmet, CORS, rate limiting
+- **📊 CSV Processing** - Advanced data parsing and validation
 
-### Database
-- **PostgreSQL 15.13-3** for robust data storage
-- **PostGIS 3.4.2** for spatial data and geographic queries
-- **Spatial indexing** for optimized geographic operations
-- **Materialized views** for dashboard performance
-
-### AI/ML
-- **Python 3.11+** with scikit-learn
-- **Random Forest** and Gradient Boosting models
-- **Feature engineering** and advanced analytics
-- **Model versioning** and confidence scoring
-- **Flask API** for model serving
-
-### DevOps
-- **Docker** containerization for all services
-- **Docker Compose** for local development
-- **Multi-stage builds** for optimized images
-- **Health checks** for service monitoring
-- **Volume persistence** for data storage
-
-## 📋 Prerequisites
-
-- **Docker** 20.10+ and Docker Compose 2.0+
-- **Node.js** 18+ (for local development)
-- **Python** 3.11+ (for AI model development)
-- **Git** for version control
+### **Data & AI** 🧠
+- **📈 Risk Calculation Engine** - Multi-factor probability algorithms  
+- **🗃️ CSV Data Processing** - Handle real pipeline inspection data
+- **🤖 Predictive Modeling** - Failure probability with confidence scoring
+- **📊 Statistical Analysis** - Trend analysis and risk factor correlation
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
+### **Prerequisites**
+- **Node.js 18+** (Download from [nodejs.org](https://nodejs.org))
+- **Git** for cloning the repository
+
+### **Installation**
+
+1. **📥 Clone the Repository**
 ```bash
-git clone https://github.com/your-org/pipeline-risk-dashboard.git
+git clone https://github.com/yourusername/pipeline-risk-dashboard.git
 cd pipeline-risk-dashboard
 ```
 
-### 2. Environment Setup
+2. **🔧 Install Backend Dependencies**
 ```bash
-# Copy environment templates
-cp .env.example .env
-cp frontend/.env.example frontend/.env
-cp backend/.env.example backend/.env
-
-# Edit environment variables as needed
-nano .env
+cd backend
+npm install
 ```
 
-### 3. Start with Docker Compose
+3. **🎨 Install Frontend Dependencies**
 ```bash
-# Build and start all services
+cd ../frontend
+npm install
+```
+
+4. **🚀 Start the Development Servers**
+
+**Backend Server (Terminal 1):**
+```bash
+cd backend
+npm run dev
+# Server starts on http://localhost:3001
+```
+
+**Frontend Server (Terminal 2):**
+```bash
+cd frontend  
+npm run dev
+# Application opens at http://localhost:3000
+```
+
+5. **🎉 Open Your Browser**
+Navigate to **http://localhost:3000** to see the dashboard in action!
+
+## � Application Features
+
+### 🏠 **Dashboard Overview**
+- **📊 Real-time Metrics** - Active pipeline count, risk distribution, alert summaries
+- **🎯 Risk Level Distribution** - Visual breakdown of Low/Medium/High/Critical risks
+- **⚡ Live Updates** - WebSocket-powered real-time data streaming
+- **📈 Trend Analysis** - Historical risk patterns and failure predictions
+
+### 🔍 **Risk Assessment Module**  
+- **📋 Pipeline Inventory** - Comprehensive list with key specifications and risk levels
+- **🧮 Instant Risk Calculation** - Click any pipeline for immediate risk analysis
+- **📊 Detailed Risk Breakdown** - Multi-factor analysis with contribution percentages
+- **🎨 Color-coded Visualization** - Intuitive risk level identification
+
+### 🤖 **AI Predictions**
+- **🎯 Failure Probability Calculation** - Realistic percentages based on pipeline conditions
+- **📅 Predicted Failure Dates** - AI-powered timeline projections
+- **🔢 Confidence Scoring** - Model certainty indicators (85-97% confidence)
+- **📈 Risk Factor Analysis** - Detailed breakdown of contributing factors
+
+### 💾 **Data Management**
+- **📤 CSV Import/Export** - Handle real-world pipeline inspection data
+- **🔄 Real-time Processing** - Instant data validation and parsing
+- **📊 Sample Data Included** - 10 realistic pipeline records for testing
+- **🗃️ Historical Tracking** - Maintain records of all risk assessments
+
+## 📊 Sample Data Overview
+
+The system includes production-quality sample data representing real pipeline scenarios:
+
+| Pipeline ID | Name | Age | Wall Loss | Corrosion Rate | Risk Level | Failure Probability |
+|------------|------|-----|-----------|----------------|------------|-------------------|
+| TX-001 | Gulf Coast Main | 30 years | 12.5% | 0.85 mil/yr | **Medium** | **0.48%** |
+| TX-005 | East Texas Loop | 33 years | 15.8% | 1.15 mil/yr | **High** | **0.996%** |
+| TX-007 | Coastal Connector | 7 years | 1.8% | 0.29 mil/yr | **Low** | **0.114%** |
+
+*Each record includes 30+ data points including geographic location, material specifications, environmental conditions, and maintenance history.*
+
+## � API Endpoints
+
+### **Pipeline Management**
+```typescript
+// Get all pipelines with risk data
+GET /api/risk-assessments
+Response: {
+  success: true,
+  data: PipelineRiskData[],
+  total: number
+}
+
+// Get CSV pipeline data for predictions  
+GET /api/predictions/csv-data
+Response: {
+  success: true,
+  data: CSVPipelineData[]
+}
+
+// Generate AI prediction for specific pipeline
+POST /api/predictions/predict-csv/:pipelineId
+Body: {
+  modelType: "ensemble",
+  timeHorizon: 5
+}
+Response: {
+  success: true,
+  message: string,
+  data: {
+    failureProbability: number,
+    predictedFailureDate: string,
+    confidenceScore: number,
+    riskFactors: RiskFactor[]
+  }
+}
+```
+
+### **Real-time WebSocket Events**
+```typescript
+// Client connection
+io.on('connection', (socket) => {
+  socket.emit('pipeline:updated', pipelineData);
+  socket.emit('risk:calculated', riskAssessment);
+  socket.emit('prediction:generated', aiPrediction);
+});
+```
+
+## 🧪 Testing the Application
+
+### **🔍 Risk Assessment Testing**
+1. Navigate to **http://localhost:3000**
+2. View the dashboard with 10 sample pipelines
+3. Click "Assess Risk" on any pipeline (e.g., TX-001)
+4. See detailed risk breakdown with realistic failure probabilities
+5. Observe color-coded risk levels and contributing factors
+
+### **🤖 AI Prediction Testing**
+1. Go to **Predictions** tab
+2. Select a pipeline from the dropdown (TX-001 through TX-010)
+3. Click "Generate AI Prediction"
+4. View realistic failure probability (0.1% - 1.0%)
+5. Examine confidence scores and risk factor analysis
+
+### **⚡ Real-time Updates Testing**
+1. Open the application in multiple browser tabs
+2. Generate a prediction in one tab
+3. Watch real-time updates appear in other tabs
+4. Observe WebSocket connectivity status indicators
+
+## 🎯 Code Quality Features
+
+### **🔷 TypeScript Implementation**
+```typescript
+interface PipelineRiskData {
+  id: string;
+  name: string;
+  riskLevel: 'Low' | 'Medium' | 'High' | 'Critical';
+  failureProbability: number;
+  lastAssessment: string;
+  specifications: PipelineSpecs;
+  riskFactors: RiskFactors;
+}
+```
+
+### **🔒 Security & Validation**
+- **Input Validation** - Joi schemas for all API endpoints
+- **Error Handling** - Comprehensive try-catch blocks with logging  
+- **CORS Protection** - Configured for development and production
+- **Rate Limiting** - Prevent API abuse and ensure stability
+
+## � Deployment & Docker
+
+### **🐳 Docker Support (Optional)**
+For containerized deployment:
+
+```bash
+# Build and run with Docker Compose
 docker-compose up --build
 
-# Or run in detached mode
-docker-compose up -d --build
+# Services will be available at:
+# - Frontend: http://localhost:3000  
+# - Backend: http://localhost:3001
 ```
 
-### 4. Initialize Database
-```bash
-# Run database migrations (first time only)
-docker-compose exec backend npm run migrate
+### **☁️ Production Deployment**
+Ready for deployment to:
+- **Heroku** - Direct GitHub integration
+- **Netlify/Vercel** - Frontend hosting
+- **AWS/Azure** - Full cloud deployment
+- **Digital Ocean** - VPS deployment
 
-# Seed sample data
-docker-compose exec backend npm run seed
+## 📁 Project Structure
+
+```
+pipeline-risk-dashboard/
+├── 📁 frontend/                 # React TypeScript application
+│   ├── 📁 src/
+│   │   ├── 📁 components/       # Reusable UI components
+│   │   ├── 📁 pages/           # Route components
+│   │   ├── 📁 hooks/           # Custom React hooks  
+│   │   ├── 📁 services/        # API clients
+│   │   └── 📁 types/           # TypeScript definitions
+│   ├── 📄 package.json
+│   └── 📄 vite.config.ts
+│
+├── 📁 backend/                  # Node.js Express API
+│   ├── 📁 src/
+│   │   ├── 📁 routes/          # API endpoints
+│   │   ├── 📁 services/        # Business logic
+│   │   ├── 📁 utils/           # Helper functions
+│   │   ├── 📁 data/           # Sample CSV data
+│   │   └── 📁 types/           # TypeScript definitions
+│   ├── 📄 package.json
+│   └── 📄 tsconfig.json
+│
+├── 📄 docker-compose.yml        # Container orchestration
+├── 📄 README.md                # This file
+└── 📄 .gitignore               # Git ignore rules
 ```
 
-### 5. Access the Application
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:5000
-- **AI Service**: http://localhost:8000
-- **Database**: localhost:5432
+## 🛠️ Development Tips
 
-## 🔧 Development Setup
-
-### Local Development (Alternative to Docker)
-
-1. **Setup Database**
+### **🔧 Backend Development**
 ```bash
-# Install PostgreSQL with PostGIS
-# Ubuntu/Debian:
-sudo apt-get install postgresql-15 postgresql-15-postgis-3
-
-# Create database
-sudo -u postgres createdb pipeline_risk
-sudo -u postgres psql -d pipeline_risk -c "CREATE EXTENSION postgis;"
-```
-
-2. **Backend Setup**
-```bash
-cd backend
-npm install
-cp .env.example .env
-# Edit .env with your database connection
+# Watch mode for auto-restart
 npm run dev
+
+# Check API endpoints
+curl http://localhost:3001/api/risk-assessments
+
+# View real-time logs
+tail -f logs/application.log
 ```
 
-3. **Frontend Setup**
+### **🎨 Frontend Development**  
 ```bash
-cd frontend
-npm install
-cp .env.example .env
+# Development server with hot reload
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-4. **AI Model Setup**
-```bash
-cd ai-model
-pip install -r requirements.txt
-cp .env.example .env
-python api_server.py
-```
+### **� Troubleshooting**
+- **Port Conflicts**: Change ports in package.json scripts if 3000/3001 are occupied
+- **CORS Issues**: Backend configured for http://localhost:3000 origin
+- **WebSocket Connection**: Check browser console for connection status
+- **CSV Parsing**: Sample data includes proper formatting examples
 
-## 📊 Database Schema
+## 🎯 Key Learning Outcomes
 
-### Core Tables
-- **pipelines** - Pipeline infrastructure data with geometry
-- **risk_factors** - Individual risk factors and measurements
-- **risk_assessments** - Calculated risk scores and levels
-- **predictions** - AI model predictions and confidence scores
-- **incidents** - Historical incident and failure data
-- **maintenance_records** - Maintenance scheduling and history
+This project demonstrates:
 
-### Key Features
-- **Spatial Indexes** - Optimized geographic queries
-- **Materialized Views** - Fast dashboard metrics
-- **Triggers** - Automatic timestamp updates
-- **Constraints** - Data integrity and validation
-- **Functions** - Custom risk calculation procedures
+### **💻 Full-Stack Development**
+- ✅ React functional components with TypeScript
+- ✅ Node.js/Express RESTful API design  
+- ✅ Real-time WebSocket communication
+- ✅ CSV data processing and validation
 
-## 🤖 AI Model Details
+### **🧠 Data Science & AI**
+- ✅ Risk calculation algorithms
+- ✅ Predictive modeling concepts
+- ✅ Statistical analysis and probability
+- ✅ Feature engineering techniques
 
-### Features Used
-- Pipeline age and installation date
-- Material properties and specifications
-- Environmental conditions (soil, temperature)
-- Historical maintenance and incident data
-- Corrosion rates and cathodic protection
-- Operating conditions vs. design limits
+### **🏗️ Software Architecture**
+- ✅ Modular component design
+- ✅ Service layer separation
+- ✅ Type-safe development practices
+- ✅ Error handling and logging
 
-### Model Architecture
-- **Ensemble Approach** - Random Forest + Gradient Boosting
-- **Feature Engineering** - Automated feature creation
-- **Cross-Validation** - K-fold validation for robustness
-- **Confidence Scoring** - Uncertainty quantification
-- **Model Versioning** - Tracking and rollback capabilities
-
-### Prediction Outputs
-- Failure probability (0-1 scale)
-- Confidence score (0-1 scale)
-- Predicted failure date
-- Risk level categorization
-- Maintenance recommendations
-- Feature importance ranking
-
-## 🔒 Security Features
-
-- **JWT Authentication** - Secure API access
-- **Input Validation** - Joi schema validation
-- **Rate Limiting** - API abuse prevention
-- **CORS Protection** - Cross-origin request security
-- **Helmet Security** - HTTP header protection
-- **SQL Injection Prevention** - Parameterized queries
-- **XSS Protection** - Input sanitization
-
-## 📈 Performance Optimizations
-
-### Database
-- Spatial indexing with GIST
-- Materialized views for metrics
-- Connection pooling
-- Query optimization
-
-### Frontend
-- Code splitting and lazy loading
-- Asset optimization and compression
-- Efficient re-rendering with React
-- Service worker for caching
-
-### Backend
-- Response caching
-- Database query optimization
-- Async/await patterns
-- Memory management
-
-## 🧪 Testing
-
-```bash
-# Backend tests
-cd backend
-npm test
-npm run test:coverage
-
-# Frontend tests
-cd frontend
-npm test
-npm run test:coverage
-
-# AI model tests
-cd ai-model
-pytest
-pytest --cov=.
-```
-
-## 📤 API Documentation
-
-### Core Endpoints
-
-#### Pipelines
-- `GET /api/pipelines` - List pipelines with pagination
-- `GET /api/pipelines/:id` - Get specific pipeline
-- `POST /api/pipelines` - Create new pipeline
-- `PUT /api/pipelines/:id` - Update pipeline
-- `DELETE /api/pipelines/:id` - Delete pipeline
-
-#### Risk Assessment
-- `GET /api/risk-assessments` - List assessments
-- `POST /api/risk-assessments` - Create assessment
-- `GET /api/risk-assessments/pipeline/:id` - Pipeline risk history
-
-#### AI Predictions
-- `POST /api/predictions/calculate` - Generate prediction
-- `GET /api/predictions/pipeline/:id` - Get predictions
-
-#### Spatial Queries
-- `GET /api/spatial/nearby/:lat/:lng/:radius` - Find nearby pipelines
-- `GET /api/spatial/intersects` - Bounding box queries
-
-### WebSocket Events
-- `pipeline:updated` - Pipeline data changes
-- `risk:calculated` - New risk assessment
-- `incident:created` - New incident reported
-- `alert:critical` - Critical alert notifications
-
-## 🐳 Docker Configuration
-
-### Services
-- **frontend** - React app with Nginx
-- **backend** - Node.js API server
-- **ai-model** - Python ML service
-- **database** - PostgreSQL with PostGIS
-- **cache** - Redis for session storage
-- **nginx** - Reverse proxy (production)
-
-### Volumes
-- **postgres_data** - Database persistence
-- **redis_data** - Cache persistence
-- **ai_models** - ML model storage
-
-## 🌍 Environment Variables
-
-### Backend (.env)
-```bash
-NODE_ENV=production
-PORT=5000
-DATABASE_URL=postgresql://user:pass@localhost:5432/pipeline_risk
-JWT_SECRET=your-super-secret-key
-FRONTEND_URL=http://localhost:3000
-LOG_LEVEL=info
-PYTHON_API_URL=http://localhost:8000
-```
-
-### Frontend (.env)
-```bash
-REACT_APP_API_URL=http://localhost:5000
-REACT_APP_WS_URL=ws://localhost:5000
-REACT_APP_MAP_TILES_URL=https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
-```
-
-### AI Model (.env)
-```bash
-FLASK_ENV=production
-DATABASE_URL=postgresql://user:pass@localhost:5432/pipeline_risk
-MODEL_PATH=/app/models
-LOG_LEVEL=info
-```
-
-## 🚀 Deployment
-
-### AWS Deployment
-1. Set up EC2 instances or ECS clusters
-2. Configure RDS for PostgreSQL with PostGIS
-3. Set up ALB for load balancing
-4. Configure CloudFront for CDN
-5. Set up S3 for static assets and backups
-
-### Production Checklist
-- [ ] Environment variables configured
-- [ ] SSL certificates installed
-- [ ] Database backups scheduled
-- [ ] Log monitoring configured
-- [ ] Health checks enabled
-- [ ] Performance monitoring active
-- [ ] Security scanning completed
-
-## 📝 Sample Data
-
-The system includes comprehensive sample data generation:
-- 50+ realistic pipeline segments
-- Geographic coordinates across different regions
-- Various risk factors and severity levels
-- Historical incident data
-- Environmental conditions
-- Maintenance records
+### **🎨 UI/UX Design**  
+- ✅ Responsive design principles
+- ✅ Data visualization best practices
+- ✅ Interactive user interfaces
+- ✅ Professional dashboard layouts
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Contributions are welcome! Here's how to get started:
 
-### Code Style
-- Use TypeScript for type safety
-- Follow ESLint configuration
-- Write comprehensive tests
-- Document API changes
-- Update README for new features
+### **🔄 Development Workflow**
+1. **Fork** the repository on GitHub
+2. **Clone** your fork locally
+3. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+4. **Make** your changes with proper TypeScript types
+5. **Test** your changes thoroughly  
+6. **Commit** with descriptive messages (`git commit -m 'Add amazing feature'`)
+7. **Push** to your branch (`git push origin feature/amazing-feature`)
+8. **Open** a Pull Request with detailed description
+
+### **📝 Code Standards**
+- ✅ Use TypeScript for all new code
+- ✅ Follow ESLint configuration
+- ✅ Add JSDoc comments for functions
+- ✅ Include error handling
+- ✅ Update README for new features
+
+### **🧪 Testing Requirements**
+- ✅ Test API endpoints manually
+- ✅ Verify TypeScript compilation  
+- ✅ Check responsive design
+- ✅ Validate real-time updates
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## 🆘 Need Help?
 
-### Common Issues
+### **🐛 Common Issues & Solutions**
 
-**Database Connection Issues**
+**❌ "Port 3000 already in use"**
 ```bash
-# Check if PostgreSQL is running
-docker-compose ps database
-
-# View database logs
-docker-compose logs database
-
-# Reset database
-docker-compose down -v
-docker-compose up -d database
+# Kill the process using port 3000
+npx kill-port 3000
+# Or change the port in package.json
 ```
 
-**Frontend Build Issues**
+**❌ "Cannot connect to backend"**
 ```bash
-# Clear cache and reinstall
-rm -rf node_modules package-lock.json
-npm install
-npm run build
+# Verify backend is running
+curl http://localhost:3001/api/risk-assessments
+# Check backend terminal for errors
 ```
 
-**AI Model Loading Issues**
+**❌ "WebSocket connection failed"**
 ```bash
-# Check Python dependencies
-pip install -r requirements.txt
-
-# Verify model files
-ls -la models/
-
-# Retrain model if needed
-python risk_predictor.py
+# Check browser console for connection status
+# Verify both frontend and backend are running
+# Ensure no firewall blocking connections
 ```
 
-### Getting Help
-- 📧 Email: support@irm-systems.com
-- 📝 Issues: [GitHub Issues](https://github.com/your-org/pipeline-risk-dashboard/issues)
-- 📚 Documentation: [Wiki](https://github.com/your-org/pipeline-risk-dashboard/wiki)
+**❌ "CSV data not loading"**
+```bash
+# Verify sample data file exists
+ls backend/src/data/pipeline_test_data.csv
+# Check backend logs for parsing errors
+```
+
+### **💬 Get Support**
+- 📧 **Email**: [your.email@domain.com](mailto:your.email@domain.com)
+- � **Issues**: [GitHub Issues](https://github.com/yourusername/pipeline-risk-dashboard/issues)
+- � **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- 🌟 **Portfolio**: [Your Portfolio Website](https://yourwebsite.com)
 
 ## 🏆 Acknowledgments
 
-- IRM Systems for domain expertise
-- PostGIS community for spatial database capabilities
-- React and Node.js communities for excellent frameworks
-- Open source contributors for various libraries used
+### **🙏 Special Thanks**
+- **IRM Systems** for providing industry domain expertise and internship opportunity
+- **React Team** for the excellent frontend framework and documentation  
+- **Node.js Community** for the robust backend ecosystem
+- **TypeScript Team** for type safety and developer experience improvements
+- **Open Source Community** for the amazing libraries and tools used in this project
+
+### **📚 Educational Resources**
+- Pipeline integrity management industry standards
+- Risk assessment methodologies in oil & gas
+- Machine learning applications in industrial safety
+- Real-time data visualization best practices
 
 ---
 
-**Built with ❤️ for Pipeline Integrity Management**
+## 🌟 **Ready to Explore Pipeline Risk Assessment?**
+
+### **👨‍💻 Developer Portfolio Project**
+This application showcases modern full-stack development skills with real-world industry applications. Built to demonstrate proficiency in:
+
+- ⚛️ **React/TypeScript** frontend development
+- 🟢 **Node.js/Express** backend architecture  
+- 📊 **Data processing** and visualization
+- 🤖 **AI/ML** integration concepts
+- 🎨 **Professional UI/UX** design
+- ⚡ **Real-time** communication systems
+
+### **🚀 Get Started in 2 Minutes**
+```bash
+# Clone and setup
+git clone https://github.com/yourusername/pipeline-risk-dashboard.git
+cd pipeline-risk-dashboard
+
+# Install and run backend  
+cd backend && npm install && npm run dev &
+
+# Install and run frontend
+cd frontend && npm install && npm run dev
+
+# Open http://localhost:3000 and start exploring! 🎉
+```
+
+**Built with ❤️ for Pipeline Integrity Management | Showcasing Full-Stack Development Excellence**

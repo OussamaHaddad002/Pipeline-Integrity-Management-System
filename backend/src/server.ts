@@ -22,7 +22,7 @@ import { initializeWebSocket } from './services/websocket';
 // Import routes
 import pipelineRoutes from './routes/pipelines_simple';
 import riskAssessmentRoutes from './routes/riskAssessments_simple';
-import predictionRoutes from './routes/predictions';
+import predictionRoutes from './routes/predictions_simple';
 import spatialRoutes from './routes/spatial';
 import dataRoutes from './routes/data';
 import dashboardRoutes from './routes/dashboard';

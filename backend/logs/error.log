@@ -2093,3 +2093,87 @@
   service: 'pipeline-risk-api',
   timestamp: '2025-08-14 17:40:41'
 }
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:40:52'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:49:34'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 17:49:49'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:51:17'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 17:51:41'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:51:59'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:51:59'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:52:02'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:52:02'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:52:13'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:54:20'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:54:28'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 17:59:55'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:17:39'
+}

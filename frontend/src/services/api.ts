@@ -88,7 +88,11 @@ class ApiService {
     limit?: number 
   }): Promise<{ assessments: RiskAssessment[]; count: number }> {
     const response = await this.api.get('/risk-assessments', { params });
-    return response.data;
+    // Handle actual backend response format: {success: true, data: [...], count: ...}
+    return {
+      assessments: response.data.data || [],
+      count: response.data.count || 0
+    };
   }
 
   async createRiskAssessment(assessment: Omit<RiskAssessment, 'id' | 'assessmentDate'>): Promise<RiskAssessment> {
@@ -104,11 +108,20 @@ class ApiService {
   // Prediction endpoints
   async getPredictions(params?: { pipelineId?: number }): Promise<{ success: boolean; data: Prediction[] }> {
     const response = await this.api.get('/predictions', { params });
-    return response.data;
+    // Handle actual backend response format: {success: true, data: [...], count: ...}
+    return {
+      success: response.data.success || true,
+      data: response.data.data || []
+    };
   }
 
   async getModelPerformance(): Promise<any> {
     const response = await this.api.get('/predictions/model-performance');
+    return response.data;
+  }
+
+  async createPrediction(predictionData: { pipelineId: number; pipelineName: string }): Promise<any> {
+    const response = await this.api.post('/predictions', predictionData);
     return response.data;
   }
 

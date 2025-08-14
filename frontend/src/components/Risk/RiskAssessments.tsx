@@ -129,10 +129,51 @@ export const RiskAssessments: React.FC = () => {
     fetchAssessments();
   }, []);
 
+  // CSV Data Import Functions
+  const [csvData, setCsvData] = useState<any[]>([]);
+  const [showCSVModal, setShowCSVModal] = useState(false);
+
+  const handleImportCSVData = async () => {
+    try {
+      const response = await fetch('/api/risk-assessments/csv-data');
+      const result = await response.json();
+      if (result.success) {
+        setCsvData(result.data);
+        setShowCSVModal(true);
+      }
+    } catch (error) {
+      console.error('Failed to import CSV data:', error);
+      alert('Failed to import CSV test data');
+    }
+  };
+
+  const assessCSVPipeline = async (pipelineId: string) => {
+    try {
+      const response = await fetch(`/api/risk-assessments/assess-csv/${pipelineId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      const result = await response.json();
+      
+      if (result.success) {
+        // Refresh assessments to show the new one
+        await fetchAssessments();
+        alert(`Risk assessment completed for ${result.data.pipelineName}`);
+      } else {
+        alert('Failed to generate assessment');
+      }
+    } catch (error) {
+      console.error('Failed to assess CSV pipeline:', error);
+      alert('Failed to generate assessment');
+    }
+  };
+
   const fetchAssessments = async () => {
     try {
       const data = await apiService.getRiskAssessments();
-      setAssessments(data.assessments || []);
+      setAssessments(data.assessments || []); // Now correctly matches API service return type
     } catch (error) {
       console.error('Failed to fetch risk assessments:', error);
       setAssessments([]);
@@ -170,11 +211,18 @@ export const RiskAssessments: React.FC = () => {
             <h1 className="text-3xl font-bold text-gray-900">Risk Assessments</h1>
             <p className="text-gray-600 mt-2">Comprehensive pipeline risk analysis and monitoring</p>
           </div>
-          <button 
-            onClick={() => startNewAssessment()}
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-            🔍 New Assessment
-          </button>
+          <div className="flex space-x-3">
+            <button 
+              onClick={() => handleImportCSVData()}
+              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+              📊 Import CSV Test Data
+            </button>
+            <button 
+              onClick={() => startNewAssessment()}
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              🔍 New Assessment
+            </button>
+          </div>
         </div>
 
         {/* Summary Stats */}
@@ -605,6 +653,76 @@ export const RiskAssessments: React.FC = () => {
               </>
             )}
             
+          </div>
+        </div>
+      )}
+
+      {/* CSV Import Modal */}
+      {showCSVModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
+            <div className="p-6 border-b">
+              <div className="flex justify-between items-center">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900">CSV Test Data - Risk Assessment</h2>
+                  <p className="text-gray-600 mt-1">Select a pipeline from the test data to perform real risk assessment</p>
+                </div>
+                <button 
+                  onClick={() => setShowCSVModal(false)}
+                  className="text-gray-400 hover:text-gray-600 text-2xl"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+            
+            <div className="p-6">
+              <div className="grid gap-4">
+                {csvData.map((pipeline, index) => (
+                  <div key={index} className="border rounded-lg p-4 hover:bg-gray-50">
+                    <div className="flex justify-between items-start">
+                      <div className="flex-1">
+                        <h3 className="text-lg font-semibold text-gray-900">{pipeline.name}</h3>
+                        <p className="text-gray-600">{pipeline.operator}</p>
+                        <div className="mt-2 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                          <div>
+                            <span className="text-gray-500">Diameter:</span>
+                            <span className="ml-1 font-medium">{pipeline.specifications.diameter}"</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-500">Age:</span>
+                            <span className="ml-1 font-medium">{pipeline.operational.age} years</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-500">Risk Level:</span>
+                            <span className={`ml-1 px-2 py-1 rounded text-xs font-medium ${
+                              pipeline.riskFactors.currentRiskLevel === 'HIGH' ? 'bg-red-100 text-red-800' :
+                              pipeline.riskFactors.currentRiskLevel === 'MEDIUM' ? 'bg-yellow-100 text-yellow-800' :
+                              'bg-green-100 text-green-800'
+                            }`}>
+                              {pipeline.riskFactors.currentRiskLevel}
+                            </span>
+                          </div>
+                          <div>
+                            <span className="text-gray-500">Wall Loss:</span>
+                            <span className="ml-1 font-medium">{pipeline.inspection.wallLossPercent}%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        onClick={() => {
+                          assessCSVPipeline(pipeline.id);
+                          setShowCSVModal(false);
+                        }}
+                        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors ml-4"
+                      >
+                        🔍 Assess Risk
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       )}

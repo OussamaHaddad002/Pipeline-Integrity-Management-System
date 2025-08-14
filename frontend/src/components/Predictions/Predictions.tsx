@@ -48,20 +48,92 @@ export const Predictions: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [selectedPrediction, setSelectedPrediction] = useState<Prediction | null>(null);
   const [showNewPrediction, setShowNewPrediction] = useState(false);
+  
+  // New prediction workflow states
+  const [predictionStep, setPredictionStep] = useState<'select' | 'configure' | 'progress' | 'complete'>('select');
+  const [selectedPipelineId, setSelectedPipelineId] = useState<number | null>(null);
+  const [availablePipelines, setAvailablePipelines] = useState<any[]>([]);
+  const [predictionConfig, setPredictionConfig] = useState({
+    modelType: 'ensemble', // ensemble, randomForest, neuralNetwork
+    analysisDepth: 'comprehensive', // basic, standard, comprehensive
+    confidenceThreshold: 0.8,
+    includeTrends: true,
+    includeEnvironmental: true,
+    includeMaintenanceHistory: true
+  });
+  const [predictionProgress, setPredictionProgress] = useState(0);
+  const [currentPrediction, setCurrentPrediction] = useState<any>(null);
 
-  const handleGeneratePrediction = async () => {
+  const startNewPrediction = async () => {
+    setShowNewPrediction(true);
+    setPredictionStep('select');
+    // Fetch available pipelines for selection
     try {
-      // Generate new prediction using API
-      await apiService.getPredictions();
-      
-      // Refetch predictions to update the list
-      fetchPredictions();
-      setShowNewPrediction(false);
-      alert('✅ AI Prediction Generated!\n\nThe ML model has analyzed:\n• Pipeline condition data\n• Historical failure patterns\n• Environmental factors\n• Maintenance records\n\nNew prediction added with 94.2% confidence score.\nRecommended maintenance actions provided.');
+      const pipelineData = await apiService.getPipelines();
+      setAvailablePipelines(pipelineData.data || []);
     } catch (error) {
-      console.error('Error generating prediction:', error);
-      alert('❌ Error generating prediction. Please try again.');
+      console.error('Failed to fetch pipelines:', error);
+      setAvailablePipelines([]);
     }
+  };
+
+  const selectPipeline = (pipelineId: number) => {
+    setSelectedPipelineId(pipelineId);
+    setPredictionStep('configure');
+  };
+
+  const startPredictionProcess = async () => {
+    setPredictionStep('progress');
+    setPredictionProgress(0);
+    
+    // Simulate AI prediction process with progress
+    const steps = [
+      'Initializing ML models...',
+      'Loading pipeline historical data...',
+      'Analyzing corrosion patterns...',
+      'Processing environmental factors...',
+      'Running failure probability algorithms...',
+      'Calculating confidence scores...',
+      'Generating maintenance recommendations...',
+      'Finalizing prediction report...'
+    ];
+    
+    for (let i = 0; i < steps.length; i++) {
+      setTimeout(() => {
+        setPredictionProgress((i + 1) * 12.5); // 8 steps = 100%
+        console.log(`Prediction Step ${i + 1}: ${steps[i]}`);
+      }, i * 700);
+    }
+    
+    // Complete the prediction after all steps
+    setTimeout(async () => {
+      try {
+        const selectedPipeline = availablePipelines.find(p => p.id === selectedPipelineId);
+        const newPredictionData = {
+          pipelineId: selectedPipelineId!,
+          pipelineName: selectedPipeline?.name || `Pipeline-${selectedPipelineId}`
+        };
+
+        const result = await apiService.createPrediction(newPredictionData);
+        setCurrentPrediction(result);
+        setPredictionStep('complete');
+        
+        // Refresh predictions list
+        await fetchPredictions();
+      } catch (error) {
+        console.error('Error creating prediction:', error);
+        alert('❌ Error generating prediction. Please try again.');
+        setShowNewPrediction(false);
+      }
+    }, steps.length * 700 + 500);
+  };
+
+  const closePredictionModal = () => {
+    setShowNewPrediction(false);
+    setPredictionStep('select');
+    setSelectedPipelineId(null);
+    setPredictionProgress(0);
+    setCurrentPrediction(null);
   };
   const [modelPerformance, setModelPerformance] = useState<ModelPerformance | null>(null);
   const [filterProbability, setFilterProbability] = useState<string>('all');
@@ -74,7 +146,7 @@ export const Predictions: React.FC = () => {
   const fetchPredictions = async () => {
     try {
       const data = await apiService.getPredictions();
-      setPredictions(data.data || []);
+      setPredictions(data.data as any || []);
     } catch (error) {
       console.error('Failed to fetch predictions:', error);
       setPredictions([]);
@@ -89,6 +161,48 @@ export const Predictions: React.FC = () => {
       setModelPerformance(data);
     } catch (error) {
       console.error('Failed to fetch model performance:', error);
+    }
+  };
+
+  // CSV Data Import Functions
+  const [csvData, setCsvData] = useState<any[]>([]);
+  const [showCSVModal, setShowCSVModal] = useState(false);
+
+  const handleImportCSVData = async () => {
+    try {
+      const response = await fetch('/api/predictions/csv-data');
+      const result = await response.json();
+      if (result.success) {
+        setCsvData(result.data);
+        setShowCSVModal(true);
+      }
+    } catch (error) {
+      console.error('Failed to import CSV data:', error);
+      alert('Failed to import CSV test data');
+    }
+  };
+
+  const predictCSVPipeline = async (pipelineId: string, modelType = 'ensemble') => {
+    try {
+      const response = await fetch(`/api/predictions/predict-csv/${pipelineId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ modelType, timeHorizon: 5 })
+      });
+      const result = await response.json();
+      
+      if (result.success) {
+        // Refresh predictions to show the new one
+        await fetchPredictions();
+        alert(`AI prediction completed for ${result.data.pipelineName}`);
+      } else {
+        alert('Failed to generate prediction');
+      }
+    } catch (error) {
+      console.error('Failed to predict CSV pipeline:', error);
+      alert('Failed to generate prediction');
     }
   };
 
@@ -145,12 +259,20 @@ export const Predictions: React.FC = () => {
             <h1 className="text-3xl font-bold">🤖 AI Predictions</h1>
             <p className="text-purple-100 mt-2">Machine learning insights for predictive maintenance</p>
           </div>
-          <button 
-            onClick={() => setShowNewPrediction(true)}
-            className="bg-white text-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition-colors font-medium"
-          >
-            🔮 Generate Prediction
-          </button>
+          <div className="flex space-x-3">
+            <button 
+              onClick={() => handleImportCSVData()}
+              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium"
+            >
+              📊 Import CSV Test Data
+            </button>
+            <button 
+              onClick={() => startNewPrediction()}
+              className="bg-white text-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition-colors font-medium"
+            >
+              🔮 Generate Prediction
+            </button>
+          </div>
         </div>
 
         {/* Model Performance Stats */}
@@ -266,7 +388,10 @@ export const Predictions: React.FC = () => {
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-sm text-gray-600">Failure Probability</span>
                   <span className={`text-lg font-bold px-2 py-1 rounded border ${getProbabilityColor(prediction.failureProbability)}`}>
-                    {(prediction.failureProbability * 100).toFixed(1)}%
+                    {prediction.failureProbability < 0.01 
+                      ? (prediction.failureProbability * 100).toFixed(3) + '%'
+                      : (prediction.failureProbability * 100).toFixed(1) + '%'
+                    }
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
@@ -302,7 +427,12 @@ export const Predictions: React.FC = () => {
               <div className="mb-4">
                 <div className="text-xs text-gray-500 mb-1">Primary Risk Factor</div>
                 <div className="bg-red-50 text-red-700 px-2 py-1 rounded text-sm font-medium">
-                  🔥 {prediction.riskFactors.primary}
+                  🔥 {prediction.riskFactors && Array.isArray(prediction.riskFactors) 
+                    ? prediction.riskFactors.reduce((max, factor) => 
+                        factor.contribution > max.contribution ? factor : max, 
+                        prediction.riskFactors[0]
+                      )?.factor || 'Unknown'
+                    : prediction.riskFactors?.primary || 'Unknown'}
                 </div>
               </div>
 
@@ -383,14 +513,56 @@ export const Predictions: React.FC = () => {
               <div className="mb-6">
                 <h3 className="font-semibold mb-3">🔥 Risk Factors</h3>
                 <div className="space-y-2">
-                  <div className="bg-red-50 border border-red-200 rounded-lg p-3">
-                    <span className="font-medium text-red-800">Primary: </span>
-                    <span className="text-red-700">{selectedPrediction.riskFactors.primary}</span>
-                  </div>
-                  <div className="bg-orange-50 border border-orange-200 rounded-lg p-3">
-                    <span className="font-medium text-orange-800">Secondary: </span>
-                    <span className="text-orange-700">{selectedPrediction.riskFactors.secondary.join(', ')}</span>
-                  </div>
+                  {selectedPrediction.riskFactors && Array.isArray(selectedPrediction.riskFactors) ? (
+                    selectedPrediction.riskFactors
+                      .sort((a, b) => b.contribution - a.contribution)
+                      .slice(0, 3)
+                      .map((factor, index) => (
+                        <div 
+                          key={index}
+                          className={`border rounded-lg p-3 ${
+                            index === 0 ? 'bg-red-50 border-red-200' :
+                            index === 1 ? 'bg-orange-50 border-orange-200' :
+                            'bg-yellow-50 border-yellow-200'
+                          }`}
+                        >
+                          <div className="flex justify-between items-center mb-1">
+                            <span className={`font-medium ${
+                              index === 0 ? 'text-red-800' :
+                              index === 1 ? 'text-orange-800' :
+                              'text-yellow-800'
+                            }`}>
+                              {index === 0 ? 'Primary: ' : index === 1 ? 'Secondary: ' : 'Tertiary: '}
+                            </span>
+                            <span className={`text-sm font-semibold ${
+                              index === 0 ? 'text-red-700' :
+                              index === 1 ? 'text-orange-700' :
+                              'text-yellow-700'
+                            }`}>
+                              {(factor.contribution * 100).toFixed(1)}%
+                            </span>
+                          </div>
+                          <span className={`${
+                            index === 0 ? 'text-red-700' :
+                            index === 1 ? 'text-orange-700' :
+                            'text-yellow-700'
+                          }`}>
+                            {factor.factor} - {factor.description}
+                          </span>
+                          <div className={`text-xs mt-1 ${
+                            index === 0 ? 'text-red-600' :
+                            index === 1 ? 'text-orange-600' :
+                            'text-yellow-600'
+                          }`}>
+                            Trend: {factor.trend}
+                          </div>
+                        </div>
+                      ))
+                  ) : (
+                    <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                      <span className="text-gray-600">Risk factor data not available</span>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -427,7 +599,7 @@ export const Predictions: React.FC = () => {
                   🔄 Retrain Model
                 </button>
                 <button 
-                  onClick={handleGeneratePrediction}
+                  onClick={() => startNewPrediction()}
                   className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
                 >
                   ⚡ Run New Prediction
@@ -438,48 +610,337 @@ export const Predictions: React.FC = () => {
         </div>
       )}
 
-      {/* New Prediction Modal */}
+      {/* New Prediction Workflow Modal */}
       {showNewPrediction && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg max-w-2xl w-full">
+          <div className="bg-white rounded-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto">
             <div className="p-6">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-xl font-bold">🔮 Generate New AI Prediction</h2>
+              
+              {/* Step 1: Pipeline Selection */}
+              {predictionStep === 'select' && (
+                <>
+                  <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-xl font-bold">🔮 Select Pipeline for AI Prediction</h2>
+                    <button 
+                      onClick={closePredictionModal}
+                      className="text-gray-500 hover:text-gray-700 text-2xl"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  
+                  <p className="text-gray-600 mb-6">Choose the pipeline you want to generate predictions for:</p>
+                  
+                  <div className="max-h-64 overflow-y-auto border rounded-lg">
+                    {availablePipelines.length > 0 ? (
+                      <div className="space-y-2 p-4">
+                        {availablePipelines.map((pipeline) => (
+                          <div 
+                            key={pipeline.id}
+                            onClick={() => selectPipeline(pipeline.id)}
+                            className="p-3 border rounded-lg hover:bg-purple-50 cursor-pointer transition-colors"
+                          >
+                            <div className="font-medium">{pipeline.name}</div>
+                            <div className="text-sm text-gray-500">
+                              Diameter: {pipeline.diameter}" | Material: {pipeline.material} | Length: {pipeline.length} km
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="p-4 text-center text-gray-500">Loading pipelines...</div>
+                    )}
+                  </div>
+                </>
+              )}
+
+              {/* Step 2: Prediction Configuration */}
+              {predictionStep === 'configure' && (
+                <>
+                  <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-xl font-bold">⚙️ Configure AI Prediction Model</h2>
+                    <button 
+                      onClick={closePredictionModal}
+                      className="text-gray-500 hover:text-gray-700 text-2xl"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  
+                  <p className="text-gray-600 mb-6">
+                    Customize the ML prediction for Pipeline ID: {selectedPipelineId}
+                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label className="block text-sm font-medium mb-2">AI Model Type:</label>
+                      <select 
+                        value={predictionConfig.modelType}
+                        onChange={(e) => setPredictionConfig({...predictionConfig, modelType: e.target.value})}
+                        className="w-full border rounded-lg p-2"
+                      >
+                        <option value="ensemble">Ensemble (Random Forest + Gradient Boost)</option>
+                        <option value="randomForest">Random Forest Only</option>
+                        <option value="neuralNetwork">Neural Network</option>
+                      </select>
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Analysis Depth:</label>
+                      <select 
+                        value={predictionConfig.analysisDepth}
+                        onChange={(e) => setPredictionConfig({...predictionConfig, analysisDepth: e.target.value})}
+                        className="w-full border rounded-lg p-2"
+                      >
+                        <option value="basic">Basic Analysis</option>
+                        <option value="standard">Standard Analysis</option>
+                        <option value="comprehensive">Comprehensive Analysis</option>
+                      </select>
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Confidence Threshold: {predictionConfig.confidenceThreshold}</label>
+                      <input 
+                        type="range" 
+                        min="0.5" 
+                        max="0.99" 
+                        step="0.01"
+                        value={predictionConfig.confidenceThreshold}
+                        onChange={(e) => setPredictionConfig({...predictionConfig, confidenceThreshold: parseFloat(e.target.value)})}
+                        className="w-full"
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <label className="flex items-center space-x-2">
+                        <input 
+                          type="checkbox" 
+                          checked={predictionConfig.includeTrends}
+                          onChange={(e) => setPredictionConfig({...predictionConfig, includeTrends: e.target.checked})}
+                          className="w-4 h-4 text-purple-600"
+                        />
+                        <span>Include Trend Analysis</span>
+                      </label>
+                      <label className="flex items-center space-x-2">
+                        <input 
+                          type="checkbox" 
+                          checked={predictionConfig.includeEnvironmental}
+                          onChange={(e) => setPredictionConfig({...predictionConfig, includeEnvironmental: e.target.checked})}
+                          className="w-4 h-4 text-purple-600"
+                        />
+                        <span>Environmental Factors</span>
+                      </label>
+                      <label className="flex items-center space-x-2">
+                        <input 
+                          type="checkbox" 
+                          checked={predictionConfig.includeMaintenanceHistory}
+                          onChange={(e) => setPredictionConfig({...predictionConfig, includeMaintenanceHistory: e.target.checked})}
+                          className="w-4 h-4 text-purple-600"
+                        />
+                        <span>Maintenance History</span>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end gap-3">
+                    <button
+                      onClick={() => setPredictionStep('select')}
+                      className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
+                    >
+                      Back
+                    </button>
+                    <button
+                      onClick={startPredictionProcess}
+                      className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                    >
+                      Generate Prediction
+                    </button>
+                  </div>
+                </>
+              )}
+
+              {/* Step 3: Prediction Progress */}
+              {predictionStep === 'progress' && (
+                <>
+                  <div className="text-center mb-6">
+                    <h2 className="text-xl font-bold">🤖 AI Model Processing</h2>
+                  </div>
+                  
+                  <p className="text-gray-600 mb-6 text-center">Machine learning models are analyzing pipeline data...</p>
+                  
+                  <div className="mb-6">
+                    <div className="flex justify-between text-sm text-gray-600 mb-2">
+                      <span>ML Processing Progress</span>
+                      <span>{Math.round(predictionProgress)}%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-4">
+                      <div 
+                        className="bg-gradient-to-r from-purple-500 to-blue-600 h-4 rounded-full transition-all duration-300"
+                        style={{width: `${predictionProgress}%`}}
+                      ></div>
+                    </div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-purple-600 mx-auto mb-4"></div>
+                    <p className="text-sm text-gray-600">Running ensemble ML models and calculating predictions...</p>
+                  </div>
+                </>
+              )}
+
+              {/* Step 4: Prediction Complete */}
+              {predictionStep === 'complete' && currentPrediction && (
+                <>
+                  <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-xl font-bold">✅ AI Prediction Complete</h2>
+                    <button 
+                      onClick={closePredictionModal}
+                      className="text-gray-500 hover:text-gray-700 text-2xl"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  
+                  <p className="text-gray-600 mb-6">AI prediction has been generated successfully!</p>
+                  
+                  <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-6 mb-6">
+                    <h4 className="font-medium mb-4">Prediction Results:</h4>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <span className="text-gray-600">Failure Probability:</span>
+                        <span className="ml-2 font-medium text-lg">
+                          {Math.round((currentPrediction.data?.failureProbability || 0) * 100)}%
+                        </span>
+                      </div>
+                      <div>
+                        <span className="text-gray-600">Confidence Score:</span>
+                        <span className="ml-2 font-medium text-lg">
+                          {Math.round((currentPrediction.data?.confidenceScore || 0) * 100)}%
+                        </span>
+                      </div>
+                      <div>
+                        <span className="text-gray-600">Model Used:</span>
+                        <span className="ml-2 font-medium">{currentPrediction.data?.predictionModel}</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-600">Generated:</span>
+                        <span className="ml-2">{new Date().toLocaleDateString()}</span>
+                      </div>
+                    </div>
+                    
+                    {currentPrediction.data?.recommendation && (
+                      <div className="mt-4 p-3 bg-white rounded border-l-4 border-purple-500">
+                        <p className="text-sm font-medium">Recommendation:</p>
+                        <p className="text-sm text-gray-600">{currentPrediction.data.recommendation}</p>
+                      </div>
+                    )}
+                  </div>
+                  
+                  <div className="flex justify-end">
+                    <button
+                      onClick={closePredictionModal}
+                      className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                    >
+                      Complete
+                    </button>
+                  </div>
+                </>
+              )}
+              
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* CSV Import Modal */}
+      {showCSVModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
+            <div className="p-6 border-b">
+              <div className="flex justify-between items-center">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900">CSV Test Data - AI Predictions</h2>
+                  <p className="text-gray-600 mt-1">Select a pipeline from the test data to generate AI-powered failure predictions</p>
+                </div>
                 <button 
-                  onClick={() => setShowNewPrediction(false)}
-                  className="text-gray-500 hover:text-gray-700 text-2xl"
+                  onClick={() => setShowCSVModal(false)}
+                  className="text-gray-400 hover:text-gray-600 text-2xl"
                 >
                   ×
                 </button>
               </div>
-              
-              <div className="mb-6">
-                <p className="text-gray-600 mb-4">
-                  Our AI prediction system will analyze multiple data points to generate accurate failure predictions:
-                </p>
-                <ul className="list-disc list-inside text-sm text-gray-600 space-y-2">
-                  <li><strong>Random Forest Model:</strong> 94.2% accuracy on historical data</li>
-                  <li><strong>Gradient Boosting:</strong> Advanced ensemble learning techniques</li>
-                  <li><strong>Feature Analysis:</strong> Age, corrosion, pressure, soil conditions</li>
-                  <li><strong>Time Series:</strong> Predictive failure date estimation</li>
-                  <li><strong>Confidence Scoring:</strong> Statistical reliability metrics</li>
-                  <li><strong>Maintenance Planning:</strong> Actionable recommendations</li>
-                </ul>
-              </div>
-              
-              <div className="flex justify-end gap-3">
-                <button 
-                  onClick={() => setShowNewPrediction(false)}
-                  className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
-                >
-                  Cancel
-                </button>
-                <button 
-                  onClick={handleGeneratePrediction}
-                  className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
-                >
-                  Generate Prediction
-                </button>
+            </div>
+            
+            <div className="p-6">
+              <div className="grid gap-4">
+                {csvData.map((pipeline, index) => (
+                  <div key={index} className="border rounded-lg p-4 hover:bg-gray-50">
+                    <div className="flex justify-between items-start">
+                      <div className="flex-1">
+                        <h3 className="text-lg font-semibold text-gray-900">{pipeline.name}</h3>
+                        <p className="text-gray-600">{pipeline.operator}</p>
+                        <div className="mt-2 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                          <div>
+                            <span className="text-gray-500">Diameter:</span>
+                            <span className="ml-1 font-medium">{pipeline.specifications.diameter}"</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-500">Age:</span>
+                            <span className="ml-1 font-medium">{pipeline.operational.age} years</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-500">Corrosion Rate:</span>
+                            <span className="ml-1 font-medium">{pipeline.environmental.corrosionRate} mils/yr</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-500">Current Risk:</span>
+                            <span className={`ml-1 px-2 py-1 rounded text-xs font-medium ${
+                              pipeline.riskFactors.currentRiskLevel === 'HIGH' ? 'bg-red-100 text-red-800' :
+                              pipeline.riskFactors.currentRiskLevel === 'MEDIUM' ? 'bg-yellow-100 text-yellow-800' :
+                              'bg-green-100 text-green-800'
+                            }`}>
+                              {pipeline.riskFactors.currentRiskLevel}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="mt-2 flex space-x-4 text-xs text-gray-500">
+                          <span>Failure Probability: {(pipeline.riskFactors.failureProbability * 100).toFixed(1)}%</span>
+                          <span>Product: {pipeline.specifications.productType}</span>
+                          <span>Material: {pipeline.specifications.materialGrade}</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-col space-y-2 ml-4">
+                        <button
+                          onClick={() => {
+                            predictCSVPipeline(pipeline.id, 'ensemble');
+                            setShowCSVModal(false);
+                          }}
+                          className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                        >
+                          🤖 Ensemble Model
+                        </button>
+                        <button
+                          onClick={() => {
+                            predictCSVPipeline(pipeline.id, 'random-forest');
+                            setShowCSVModal(false);
+                          }}
+                          className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+                        >
+                          🌳 Random Forest
+                        </button>
+                        <button
+                          onClick={() => {
+                            predictCSVPipeline(pipeline.id, 'neural-network');
+                            setShowCSVModal(false);
+                          }}
+                          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                        >
+                          🧠 Neural Network
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -116,7 +116,7 @@ router.get('/', asyncHandler(async (req: Request, res: Response) => {
       ? enhancedMockPredictions.filter(p => p.pipelineId === parseInt(pipelineId))
       : enhancedMockPredictions;
 
-    res.json({
+    return res.json({
       success: true,
       data: filteredPredictions,
       source: 'mock',
@@ -125,7 +125,7 @@ router.get('/', asyncHandler(async (req: Request, res: Response) => {
 
   } catch (error) {
     logger.error('Failed to fetch predictions', error);
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       error: 'Failed to fetch predictions'
     });

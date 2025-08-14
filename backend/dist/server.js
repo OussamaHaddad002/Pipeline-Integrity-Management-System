@@ -84,12 +84,16 @@ class Server {
     }
     initializeRoutes() {
         this.app.use('/api', auth_1.authMiddleware);
+        console.log('Mounting API routes...');
+        console.log('Pipeline routes:', typeof pipelines_1.default);
+        console.log('Dashboard routes:', typeof dashboard_1.default);
         this.app.use('/api/pipelines', pipelines_1.default);
         this.app.use('/api/risk-assessments', riskAssessments_1.default);
         this.app.use('/api/predictions', predictions_1.default);
         this.app.use('/api/spatial', spatial_1.default);
         this.app.use('/api/data', data_1.default);
         this.app.use('/api/dashboard', dashboard_1.default);
+        console.log('All API routes mounted successfully');
         this.app.all('*', (req, res) => {
             res.status(404).json({
                 success: false,

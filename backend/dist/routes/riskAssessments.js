@@ -3,31 +3,111 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const errorHandler_1 = require("../middleware/errorHandler");
 const logger_1 = require("../utils/logger");
+const aiService_1 = require("../services/aiService");
+function transformPipelineData(pipeline) {
+    const installDate = new Date(pipeline.installationDate);
+    const age = (Date.now() - installDate.getTime()) / (1000 * 60 * 60 * 24 * 365);
+    return {
+        id: pipeline.id,
+        name: pipeline.name,
+        diameter: pipeline.diameter || 24,
+        material: pipeline.material || 'Carbon Steel',
+        installationDate: pipeline.installationDate,
+        pressureRating: pipeline.pressureRating || 1440,
+        age: age,
+        length: pipeline.length || 10.5,
+        depth: pipeline.depth || 1.5,
+        corrosionRate: pipeline.corrosionRate || 0.1 + Math.random() * 0.1,
+        pressureVariance: pipeline.pressureVariance || Math.random() * 0.15,
+        soilConditions: pipeline.soilConditions || 'neutral',
+        maintenanceHistory: pipeline.maintenanceHistory || 'regular',
+        temperature: pipeline.temperature || 15 + Math.random() * 20,
+        operatingPressure: pipeline.operatingPressure || pipeline.pressureRating * 0.7,
+        flowRate: pipeline.flowRate || 100 + Math.random() * 200
+    };
+}
 const router = (0, express_1.Router)();
 router.get('/', (0, errorHandler_1.asyncHandler)(async (req, res) => {
     try {
         const pipelineId = req.query.pipelineId;
-        const assessments = [
+        const mockPipelines = [
+            {
+                id: 1,
+                name: "Trans-Alberta Main Line",
+                diameter: 36,
+                material: "Carbon Steel",
+                installationDate: "2018-03-15",
+                pressureRating: 1440,
+                length: 25.5,
+                depth: 2.1,
+                soilConditions: "acidic"
+            },
+            {
+                id: 2,
+                name: "Saskatchewan Distribution Line A",
+                diameter: 24,
+                material: "Stainless Steel",
+                installationDate: "2020-07-22",
+                pressureRating: 1200,
+                length: 15.2,
+                depth: 1.8,
+                soilConditions: "neutral"
+            },
+            {
+                id: 3,
+                name: "Manitoba Transmission Pipeline",
+                diameter: 30,
+                material: "Carbon Steel",
+                installationDate: "2015-11-10",
+                pressureRating: 1600,
+                length: 35.7,
+                depth: 2.5,
+                soilConditions: "alkaline"
+            }
+        ];
+        try {
+            if (await aiService_1.aiService.isServiceAvailable()) {
+                logger_1.logger.info('Using real AI service for risk assessments');
+                const pipelineData = mockPipelines.map(transformPipelineData);
+                const aiAssessments = await aiService_1.aiService.generateRiskAssessments(pipelineData);
+                const filteredAssessments = pipelineId
+                    ? aiAssessments.filter(a => a.pipelineId === parseInt(pipelineId))
+                    : aiAssessments;
+                return res.json({
+                    success: true,
+                    data: filteredAssessments,
+                    source: 'ai',
+                    message: 'Risk assessments generated using AI models'
+                });
+            }
+        }
+        catch (aiError) {
+            logger_1.logger.warn('AI service failed, using enhanced mock data:', aiError);
+        }
+        logger_1.logger.info('Using enhanced mock data for risk assessments');
+        const enhancedMockAssessments = [
             {
                 id: 1,
                 pipelineId: 1,
                 pipelineName: "Trans-Alberta Main Line",
                 overallRiskScore: 78,
                 riskLevel: "high",
-                assessmentDate: "2024-08-14T00:00:00Z",
-                nextInspectionDue: "2024-09-15T00:00:00Z",
-                inspector: "John Smith, P.Eng",
+                assessmentDate: new Date().toISOString(),
+                nextInspectionDue: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
+                inspector: "Dr. Sarah Mitchell, P.Eng",
                 factorsConsidered: [
                     { type: "corrosion", value: 8.2, severityLevel: 4, description: "Advanced corrosion detected at multiple joints" },
                     { type: "pressure", value: 6.8, severityLevel: 3, description: "Pressure variations exceeding normal range" },
-                    { type: "age", value: 12.5, severityLevel: 4, description: "Pipeline operational for 25+ years" },
-                    { type: "soil", value: 7.1, severityLevel: 3, description: "Acidic soil conditions accelerating corrosion" }
+                    { type: "age", value: 12.5, severityLevel: 4, description: "Pipeline operational for 6+ years, approaching critical maintenance period" },
+                    { type: "soil", value: 7.1, severityLevel: 3, description: "Acidic soil conditions accelerating corrosion process" },
+                    { type: "temperature", value: 5.4, severityLevel: 2, description: "Temperature fluctuations within acceptable range" }
                 ],
                 recommendations: [
-                    "Schedule immediate comprehensive inspection within 30 days",
-                    "Consider pressure reduction to 80% of MAOP",
-                    "Implement weekly corrosion monitoring protocol",
-                    "Evaluate soil treatment options for corrosion prevention"
+                    "Schedule comprehensive inspection within 15 days",
+                    "Consider pressure reduction to 75% of MAOP temporarily",
+                    "Implement daily corrosion monitoring protocol",
+                    "Evaluate soil treatment options for pH neutralization",
+                    "Review and update maintenance schedule"
                 ]
             },
             {
@@ -36,79 +116,63 @@ router.get('/', (0, errorHandler_1.asyncHandler)(async (req, res) => {
                 pipelineName: "Saskatchewan Distribution Line A",
                 overallRiskScore: 45,
                 riskLevel: "medium",
-                assessmentDate: "2024-08-13T00:00:00Z",
-                nextInspectionDue: "2024-11-20T00:00:00Z",
-                inspector: "Maria Rodriguez, P.Eng",
+                assessmentDate: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(),
+                nextInspectionDue: new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toISOString(),
+                inspector: "Mike Chen, P.Eng",
                 factorsConsidered: [
-                    { type: "depth", value: 3.2, severityLevel: 2, description: "Pipeline buried at adequate depth" },
-                    { type: "soil", value: 4.1, severityLevel: 2, description: "Neutral soil conditions" },
-                    { type: "temperature", value: 5.8, severityLevel: 3, description: "Temperature fluctuations within acceptable range" },
-                    { type: "traffic", value: 2.9, severityLevel: 2, description: "Low traffic load above pipeline" }
+                    { type: "corrosion", value: 4.1, severityLevel: 2, description: "Minor corrosion detected, within acceptable limits" },
+                    { type: "pressure", value: 3.2, severityLevel: 2, description: "Stable pressure readings" },
+                    { type: "age", value: 6.8, severityLevel: 2, description: "Relatively new pipeline, 4 years in operation" },
+                    { type: "soil", value: 2.9, severityLevel: 1, description: "Neutral soil conditions, no significant corrosion risk" },
+                    { type: "maintenance", value: 4.5, severityLevel: 2, description: "Regular maintenance schedule being followed" }
                 ],
                 recommendations: [
                     "Continue regular inspection schedule",
-                    "Monitor temperature variations during winter months",
-                    "Maintain current cathodic protection levels"
+                    "Monitor corrosion progression quarterly",
+                    "Maintain current operating parameters",
+                    "Schedule routine maintenance in 3 months"
                 ]
             },
             {
                 id: 3,
                 pipelineId: 3,
-                pipelineName: "Edmonton Feeder Line B",
-                overallRiskScore: 92,
-                riskLevel: "critical",
-                assessmentDate: "2024-08-12T00:00:00Z",
-                nextInspectionDue: "2024-08-20T00:00:00Z",
-                inspector: "David Chen, P.Eng",
+                pipelineName: "Manitoba Transmission Pipeline",
+                overallRiskScore: 65,
+                riskLevel: "high",
+                assessmentDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+                nextInspectionDue: new Date(Date.now() + 21 * 24 * 60 * 60 * 1000).toISOString(),
+                inspector: "Dr. Maria Rodriguez, P.Eng",
                 factorsConsidered: [
-                    { type: "corrosion", value: 9.5, severityLevel: 5, description: "Severe external corrosion with metal loss >40%" },
-                    { type: "pressure", value: 8.9, severityLevel: 4, description: "Operating near maximum allowable pressure" },
-                    { type: "age", value: 8.7, severityLevel: 4, description: "35-year-old pipeline with limited maintenance history" },
-                    { type: "weather", value: 7.3, severityLevel: 3, description: "Recent freeze-thaw cycles causing stress" }
+                    { type: "corrosion", value: 7.3, severityLevel: 3, description: "Moderate corrosion progression detected" },
+                    { type: "pressure", value: 6.1, severityLevel: 3, description: "Some pressure fluctuations observed" },
+                    { type: "age", value: 15.2, severityLevel: 4, description: "Pipeline operational for 9+ years, requiring enhanced monitoring" },
+                    { type: "soil", value: 6.8, severityLevel: 3, description: "Alkaline soil conditions affecting material integrity" },
+                    { type: "flow", value: 4.7, severityLevel: 2, description: "Flow rates within normal operational parameters" }
                 ],
                 recommendations: [
-                    "IMMEDIATE SHUTDOWN RECOMMENDED - Safety risk identified",
-                    "Emergency repair/replacement within 48 hours",
-                    "Reroute gas flow through backup systems",
-                    "Full section replacement required before resuming operation"
-                ]
-            },
-            {
-                id: 4,
-                pipelineId: 4,
-                pipelineName: "Calgary Cross-town Connector",
-                overallRiskScore: 28,
-                riskLevel: "low",
-                assessmentDate: "2024-08-11T00:00:00Z",
-                nextInspectionDue: "2025-02-15T00:00:00Z",
-                inspector: "Sarah Wilson, P.Eng",
-                factorsConsidered: [
-                    { type: "age", value: 2.1, severityLevel: 1, description: "Recently installed - 3 years old" },
-                    { type: "corrosion", value: 1.8, severityLevel: 1, description: "Minimal corrosion detected" },
-                    { type: "pressure", value: 3.5, severityLevel: 2, description: "Operating well below MAOP" },
-                    { type: "soil", value: 2.9, severityLevel: 1, description: "Well-draining, non-corrosive soil" }
-                ],
-                recommendations: [
-                    "Continue standard inspection schedule",
-                    "Maintain current operating parameters",
-                    "Monitor for any changes in soil conditions"
+                    "Schedule detailed inspection within 21 days",
+                    "Implement enhanced monitoring protocol",
+                    "Consider cathodic protection system upgrade",
+                    "Review operating pressure limits",
+                    "Plan preventive maintenance activities"
                 ]
             }
         ];
         const filteredAssessments = pipelineId
-            ? assessments.filter(a => a.pipelineId === parseInt(pipelineId))
-            : assessments;
-        logger_1.logger.info(`Risk assessments requested. Pipeline ID: ${pipelineId || 'all'}, Count: ${filteredAssessments.length}`);
+            ? enhancedMockAssessments.filter(a => a.pipelineId === parseInt(pipelineId))
+            : enhancedMockAssessments;
         res.json({
-            assessments: filteredAssessments,
-            count: filteredAssessments.length
+            success: true,
+            data: filteredAssessments,
+            source: 'mock',
+            message: 'Risk assessments from enhanced simulation data'
         });
     }
     catch (error) {
-        logger_1.logger.error('Error fetching risk assessments:', error);
+        logger_1.logger.error('Failed to fetch risk assessments', error);
         res.status(500).json({
-            error: 'Internal server error',
-            message: 'Failed to fetch risk assessments'
+            success: false,
+            error: 'Failed to fetch risk assessments'
         });
     }
 }));

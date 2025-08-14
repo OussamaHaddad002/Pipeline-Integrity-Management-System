@@ -20,8 +20,8 @@ import { validateEnv } from './utils/validation';
 import { initializeWebSocket } from './services/websocket';
 
 // Import routes
-import pipelineRoutes from './routes/pipelines';
-import riskAssessmentRoutes from './routes/riskAssessments';
+import pipelineRoutes from './routes/pipelines_simple';
+import riskAssessmentRoutes from './routes/riskAssessments_simple';
 import predictionRoutes from './routes/predictions';
 import spatialRoutes from './routes/spatial';
 import dataRoutes from './routes/data';

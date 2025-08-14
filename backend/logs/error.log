@@ -1607,3 +1607,489 @@
   service: 'pipeline-risk-api',
   timestamp: '2025-08-14 15:03:59'
 }
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 16:48:20'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:50:52'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 16:52:53'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:53:02'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:53:08'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:53:34'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:05'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:29'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:29'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:37'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:37'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:40'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:40'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:44'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:54:44'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:58:36'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:10'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:10'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:40'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:40'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:41'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:41'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:48'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 16:59:48'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:00:14'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:00:14'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:00:23'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:00:23'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:03:58'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:04:21'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:04:39'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:05:49'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:05:49'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:02'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:02'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:03'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:03'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:37'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:37'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:42'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:06:42'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:12:50'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:12:51'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:19'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:19'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:21'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:24'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:25'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:25'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:28'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:13:30'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:14:21'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:14:21'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:14:46'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:16:04'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:18:54'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:21:59'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:21:59'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:22:01'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:22:03'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:22:33'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:22:48'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:24:19'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:24:19'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:24:22'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:24:32'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:25:31'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:25:31'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:25:48'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:25:48'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:25:57'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:26:04'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:28:53'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:30:16'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:30:26'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:33:13'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 17:33:37'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:35:31'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 17:35:42'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'AI API Response Error:',
+  timestamp: '2025-08-14 17:40:19'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 17:40:41'
+}

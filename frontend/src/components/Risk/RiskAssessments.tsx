@@ -31,6 +31,99 @@ export const RiskAssessments: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [selectedAssessment, setSelectedAssessment] = useState<RiskAssessment | null>(null);
   const [filterRiskLevel, setFilterRiskLevel] = useState<string>('all');
+  const [showNewAssessment, setShowNewAssessment] = useState(false);
+  
+  // New assessment workflow states
+  const [assessmentStep, setAssessmentStep] = useState<'select' | 'configure' | 'progress' | 'complete'>('select');
+  const [selectedPipelineId, setSelectedPipelineId] = useState<number | null>(null);
+  const [availablePipelines, setAvailablePipelines] = useState<any[]>([]);
+  const [assessmentConfig, setAssessmentConfig] = useState({
+    includeCorrosion: true,
+    includePressure: true,
+    includeEnvironmental: true,
+    includeMaintenance: true,
+    inspectionUrgency: 'standard' // standard, urgent, scheduled
+  });
+  const [assessmentProgress, setAssessmentProgress] = useState(0);
+  const [currentAssessment, setCurrentAssessment] = useState<any>(null);
+
+  const startNewAssessment = async () => {
+    setShowNewAssessment(true);
+    setAssessmentStep('select');
+    // Fetch available pipelines for selection
+    try {
+      const pipelineData = await apiService.getPipelines();
+      setAvailablePipelines(pipelineData.data || []);
+    } catch (error) {
+      console.error('Failed to fetch pipelines:', error);
+      setAvailablePipelines([]);
+    }
+  };
+
+  const selectPipeline = (pipelineId: number) => {
+    setSelectedPipelineId(pipelineId);
+    setAssessmentStep('configure');
+  };
+
+  const startAssessmentProcess = async () => {
+    setAssessmentStep('progress');
+    setAssessmentProgress(0);
+    
+    // Simulate assessment process with progress
+    const steps = [
+      'Initializing assessment parameters...',
+      'Analyzing pipeline structural data...',
+      'Evaluating corrosion patterns...',
+      'Processing pressure variance data...',
+      'Assessing environmental factors...',
+      'Running AI risk prediction models...',
+      'Generating maintenance recommendations...',
+      'Finalizing risk assessment report...'
+    ];
+    
+    for (let i = 0; i < steps.length; i++) {
+      setTimeout(() => {
+        setAssessmentProgress((i + 1) * 12.5); // 8 steps = 100%
+        console.log(`Assessment Step ${i + 1}: ${steps[i]}`);
+      }, i * 800);
+    }
+    
+    // Complete the assessment after all steps
+    setTimeout(async () => {
+      try {
+        const selectedPipeline = availablePipelines.find(p => p.id === selectedPipelineId);
+        const newAssessmentData = {
+          pipelineId: selectedPipelineId!,
+          pipelineName: selectedPipeline?.name || `Pipeline-${selectedPipelineId}`,
+          overallRiskScore: 0,
+          riskLevel: 'medium' as const,
+          nextInspectionDue: '',
+          inspector: '',
+          factorsConsidered: [],
+          recommendations: []
+        };
+
+        const result = await apiService.createRiskAssessment(newAssessmentData);
+        setCurrentAssessment(result);
+        setAssessmentStep('complete');
+        
+        // Refresh assessments list
+        await fetchAssessments();
+      } catch (error) {
+        console.error('Error creating assessment:', error);
+        alert('❌ Error generating risk assessment. Please try again.');
+        setShowNewAssessment(false);
+      }
+    }, steps.length * 800 + 500);
+  };
+
+  const closeAssessmentModal = () => {
+    setShowNewAssessment(false);
+    setAssessmentStep('select');
+    setSelectedPipelineId(null);
+    setAssessmentProgress(0);
+    setCurrentAssessment(null);
+  };
 
   useEffect(() => {
     fetchAssessments();
@@ -77,7 +170,9 @@ export const RiskAssessments: React.FC = () => {
             <h1 className="text-3xl font-bold text-gray-900">Risk Assessments</h1>
             <p className="text-gray-600 mt-2">Comprehensive pipeline risk analysis and monitoring</p>
           </div>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+          <button 
+            onClick={() => startNewAssessment()}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
             🔍 New Assessment
           </button>
         </div>
@@ -315,6 +410,201 @@ export const RiskAssessments: React.FC = () => {
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* New Assessment Workflow Modal */}
+      {showNewAssessment && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-full max-w-2xl mx-4 max-h-[90vh] overflow-y-auto">
+            
+            {/* Step 1: Pipeline Selection */}
+            {assessmentStep === 'select' && (
+              <>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">🔍 Select Pipeline for Assessment</h3>
+                <p className="text-gray-600 mb-6">Choose the pipeline you want to assess:</p>
+                
+                <div className="max-h-64 overflow-y-auto border rounded-lg">
+                  {availablePipelines.length > 0 ? (
+                    <div className="space-y-2 p-4">
+                      {availablePipelines.map((pipeline) => (
+                        <div 
+                          key={pipeline.id}
+                          onClick={() => selectPipeline(pipeline.id)}
+                          className="p-3 border rounded-lg hover:bg-blue-50 cursor-pointer transition-colors"
+                        >
+                          <div className="font-medium">{pipeline.name}</div>
+                          <div className="text-sm text-gray-500">
+                            Diameter: {pipeline.diameter}" | Material: {pipeline.material} | Length: {pipeline.length} km
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="p-4 text-center text-gray-500">Loading pipelines...</div>
+                  )}
+                </div>
+                
+                <div className="flex justify-end mt-6">
+                  <button
+                    onClick={closeAssessmentModal}
+                    className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </>
+            )}
+
+            {/* Step 2: Assessment Configuration */}
+            {assessmentStep === 'configure' && (
+              <>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">⚙️ Configure Assessment Parameters</h3>
+                <p className="text-gray-600 mb-6">
+                  Customize the assessment for Pipeline ID: {selectedPipelineId}
+                </p>
+                
+                <div className="space-y-4 mb-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <label className="flex items-center space-x-2">
+                      <input 
+                        type="checkbox" 
+                        checked={assessmentConfig.includeCorrosion}
+                        onChange={(e) => setAssessmentConfig({...assessmentConfig, includeCorrosion: e.target.checked})}
+                        className="w-4 h-4 text-blue-600"
+                      />
+                      <span>Corrosion Analysis</span>
+                    </label>
+                    <label className="flex items-center space-x-2">
+                      <input 
+                        type="checkbox" 
+                        checked={assessmentConfig.includePressure}
+                        onChange={(e) => setAssessmentConfig({...assessmentConfig, includePressure: e.target.checked})}
+                        className="w-4 h-4 text-blue-600"
+                      />
+                      <span>Pressure Testing</span>
+                    </label>
+                    <label className="flex items-center space-x-2">
+                      <input 
+                        type="checkbox" 
+                        checked={assessmentConfig.includeEnvironmental}
+                        onChange={(e) => setAssessmentConfig({...assessmentConfig, includeEnvironmental: e.target.checked})}
+                        className="w-4 h-4 text-blue-600"
+                      />
+                      <span>Environmental Factors</span>
+                    </label>
+                    <label className="flex items-center space-x-2">
+                      <input 
+                        type="checkbox" 
+                        checked={assessmentConfig.includeMaintenance}
+                        onChange={(e) => setAssessmentConfig({...assessmentConfig, includeMaintenance: e.target.checked})}
+                        className="w-4 h-4 text-blue-600"
+                      />
+                      <span>Maintenance History</span>
+                    </label>
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Assessment Priority:</label>
+                    <select 
+                      value={assessmentConfig.inspectionUrgency}
+                      onChange={(e) => setAssessmentConfig({...assessmentConfig, inspectionUrgency: e.target.value})}
+                      className="w-full border rounded-lg p-2"
+                    >
+                      <option value="standard">Standard Assessment</option>
+                      <option value="urgent">Urgent Assessment</option>
+                      <option value="scheduled">Scheduled Maintenance</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div className="flex justify-end gap-3">
+                  <button
+                    onClick={() => setAssessmentStep('select')}
+                    className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
+                  >
+                    Back
+                  </button>
+                  <button
+                    onClick={startAssessmentProcess}
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    Start Assessment
+                  </button>
+                </div>
+              </>
+            )}
+
+            {/* Step 3: Assessment Progress */}
+            {assessmentStep === 'progress' && (
+              <>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">🔄 Running Assessment</h3>
+                <p className="text-gray-600 mb-6">Please wait while we analyze the pipeline...</p>
+                
+                <div className="mb-6">
+                  <div className="flex justify-between text-sm text-gray-600 mb-2">
+                    <span>Assessment Progress</span>
+                    <span>{Math.round(assessmentProgress)}%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-3">
+                    <div 
+                      className="bg-blue-600 h-3 rounded-full transition-all duration-300"
+                      style={{width: `${assessmentProgress}%`}}
+                    ></div>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                  <p className="text-sm text-gray-600">Analyzing pipeline data and generating risk assessment...</p>
+                </div>
+              </>
+            )}
+
+            {/* Step 4: Assessment Complete */}
+            {assessmentStep === 'complete' && currentAssessment && (
+              <>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">✅ Assessment Complete</h3>
+                <p className="text-gray-600 mb-6">Risk assessment has been completed successfully!</p>
+                
+                <div className="bg-gray-50 rounded-lg p-4 mb-6">
+                  <h4 className="font-medium mb-3">Assessment Results:</h4>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <span className="text-gray-600">Risk Level:</span>
+                      <span className={`ml-2 px-2 py-1 rounded text-xs font-medium ${
+                        currentAssessment.data?.riskLevel ? riskLevelColors[currentAssessment.data.riskLevel as keyof typeof riskLevelColors] || 'bg-gray-100 text-gray-800' : 'bg-gray-100 text-gray-800'
+                      }`}>
+                        {currentAssessment.data?.riskLevel?.toUpperCase()}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Risk Score:</span>
+                      <span className="ml-2 font-medium">{currentAssessment.data?.overallRiskScore}/100</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Inspector:</span>
+                      <span className="ml-2">{currentAssessment.data?.inspector}</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Assessment Date:</span>
+                      <span className="ml-2">{new Date().toLocaleDateString()}</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex justify-end">
+                  <button
+                    onClick={closeAssessmentModal}
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    Complete
+                  </button>
+                </div>
+              </>
+            )}
+            
           </div>
         </div>
       )}

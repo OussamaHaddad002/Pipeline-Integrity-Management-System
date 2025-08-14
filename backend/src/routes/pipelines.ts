@@ -128,4 +128,56 @@ router.get('/:id', asyncHandler(async (req: Request, res: Response) => {
   }
 }));
 
+/**
+ * POST /api/pipelines
+ * Create a new pipeline
+ */
+router.post('/', asyncHandler(async (req: Request, res: Response) => {
+  try {
+    const { name, diameter, material, installationDate, pressureRating, status, geometry } = req.body;
+
+    // Validate required fields
+    if (!name || !diameter || !material || !pressureRating) {
+      res.status(400).json({
+        success: false,
+        error: 'Missing required fields: name, diameter, material, pressureRating'
+      });
+    } else {
+      // Create new pipeline (in a real app, this would save to database)
+      const newPipeline = {
+        id: Date.now(), // Simple ID generation
+        name,
+        diameter: parseInt(diameter),
+        material,
+        installationDate: installationDate || new Date().toISOString().split('T')[0],
+        pressureRating: parseInt(pressureRating),
+        status: status || 'active',
+        geometry: geometry || {
+          type: "LineString",
+          coordinates: [
+            [-95.3698 + Math.random() * 0.1, 29.7604 + Math.random() * 0.1],
+            [-95.3798 + Math.random() * 0.1, 29.7704 + Math.random() * 0.1]
+          ]
+        },
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      };
+
+      logger.info('Pipeline created successfully', { pipelineId: newPipeline.id, name });
+
+      res.status(201).json({
+        success: true,
+        data: newPipeline,
+        message: 'Pipeline created successfully'
+      });
+    }
+  } catch (error) {
+    logger.error('Failed to create pipeline', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to create pipeline'
+    });
+  }
+}));
+
 export default router;

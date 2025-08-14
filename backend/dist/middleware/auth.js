@@ -11,17 +11,11 @@ const authMiddleware = async (req, _res, next) => {
     try {
         console.log('Auth middleware - NODE_ENV:', process.env.NODE_ENV);
         console.log('Auth middleware - req.path:', req.path);
-        if (process.env.NODE_ENV === 'development') {
-            if (req.path === '/health' ||
-                req.path.startsWith('/dashboard') ||
-                req.path.startsWith('/pipelines') ||
-                req.path.startsWith('/risk-assessments') ||
-                req.path.startsWith('/predictions') ||
-                req.path.startsWith('/spatial') ||
-                req.path.startsWith('/data')) {
-                console.log('Auth middleware - bypassing auth for development');
-                return next();
-            }
+        console.log('Auth middleware - req.originalUrl:', req.originalUrl);
+        const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+        if (isDevelopment) {
+            console.log('Auth middleware - bypassing auth for development environment');
+            return next();
         }
         const authHeader = req.headers.authorization;
         if (!authHeader) {

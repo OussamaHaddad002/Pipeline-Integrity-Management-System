@@ -25,22 +25,18 @@ export const authMiddleware = async (
     // Debug logging 
     console.log('Auth middleware - NODE_ENV:', process.env.NODE_ENV);
     console.log('Auth middleware - req.path:', req.path);
+    console.log('Auth middleware - req.originalUrl:', req.originalUrl);
     
-    // For development, skip auth for certain endpoints
-    if (process.env.NODE_ENV === 'development') {
-      // Skip auth for health checks and some development endpoints
-      if (req.path === '/health' || 
-          req.path.startsWith('/dashboard') || 
-          req.path.startsWith('/pipelines') ||
-          req.path.startsWith('/risk-assessments') ||
-          req.path.startsWith('/predictions') ||
-          req.path.startsWith('/spatial') ||
-          req.path.startsWith('/data')) {
-        console.log('Auth middleware - bypassing auth for development');
-        return next();
-      }
+    // For development, skip auth for all API endpoints
+    // Check both undefined NODE_ENV and explicit 'development'
+    const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+    
+    if (isDevelopment) {
+      console.log('Auth middleware - bypassing auth for development environment');
+      return next();
     }
 
+    // Production authentication logic
     const authHeader = req.headers.authorization;
     
     if (!authHeader) {

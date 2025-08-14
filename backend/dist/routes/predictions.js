@@ -11,6 +11,7 @@ router.get('/', (0, errorHandler_1.asyncHandler)(async (req, res) => {
             {
                 id: 1,
                 pipelineId: 1,
+                pipelineName: "Trans-Alberta Main Line",
                 failureProbability: 0.78,
                 confidenceScore: 0.89,
                 predictedFailureDate: "2025-02-15T00:00:00Z",
@@ -20,14 +21,27 @@ router.get('/', (0, errorHandler_1.asyncHandler)(async (req, res) => {
                     corrosionRate: 0.15,
                     pressureVariance: 0.08,
                     soilConditions: "acidic",
-                    maintenanceHistory: "irregular"
+                    maintenanceHistory: "irregular",
+                    temperature: 12.5,
+                    depth: 1.8
                 },
                 recommendation: "Schedule immediate comprehensive inspection and consider pipeline replacement within 6 months",
-                createdAt: "2024-08-14T00:00:00Z"
+                createdAt: "2024-08-14T00:00:00Z",
+                riskFactors: {
+                    primary: "Corrosion rate exceeding safety threshold",
+                    secondary: ["Irregular maintenance schedule", "Acidic soil conditions", "Temperature fluctuations"]
+                },
+                maintenanceActions: [
+                    "Immediate comprehensive pipe inspection",
+                    "Corrosion inhibitor application",
+                    "Pressure testing at reduced levels",
+                    "Soil treatment for pH neutralization"
+                ]
             },
             {
                 id: 2,
                 pipelineId: 2,
+                pipelineName: "Saskatchewan Distribution Line A",
                 failureProbability: 0.34,
                 confidenceScore: 0.92,
                 predictedFailureDate: "2026-11-22T00:00:00Z",
@@ -37,10 +51,18 @@ router.get('/', (0, errorHandler_1.asyncHandler)(async (req, res) => {
                     corrosionRate: 0.05,
                     pressureVariance: 0.03,
                     soilConditions: "neutral",
-                    maintenanceHistory: "regular"
                 },
                 recommendation: "Continue regular maintenance schedule. Monitor corrosion trends quarterly",
-                createdAt: "2024-08-13T00:00:00Z"
+                createdAt: "2024-08-13T00:00:00Z",
+                riskFactors: {
+                    primary: "Low risk - well maintained pipeline",
+                    secondary: ["Regular maintenance program", "Neutral soil conditions", "Stable operating parameters"]
+                },
+                maintenanceActions: [
+                    "Continue quarterly inspections",
+                    "Monitor corrosion rates annually",
+                    "Maintain cathodic protection system"
+                ]
             }
         ];
         const filteredPredictions = pipelineId
@@ -56,6 +78,66 @@ router.get('/', (0, errorHandler_1.asyncHandler)(async (req, res) => {
         res.status(500).json({
             success: false,
             error: 'Failed to fetch predictions'
+        });
+    }
+}));
+router.get('/model-performance', (0, errorHandler_1.asyncHandler)(async (_req, res) => {
+    try {
+        const performance = {
+            models: [
+                {
+                    name: "Random Forest",
+                    accuracy: 94.2,
+                    precision: 0.91,
+                    recall: 0.89,
+                    f1Score: 0.90,
+                    lastTrained: "2024-08-13T08:00:00Z",
+                    trainingDataSize: 15420,
+                    status: "active"
+                },
+                {
+                    name: "Gradient Boosting",
+                    accuracy: 91.8,
+                    precision: 0.88,
+                    recall: 0.87,
+                    f1Score: 0.875,
+                    lastTrained: "2024-08-12T09:15:00Z",
+                    trainingDataSize: 15420,
+                    status: "active"
+                },
+                {
+                    name: "Support Vector Machine",
+                    accuracy: 89.3,
+                    precision: 0.85,
+                    recall: 0.84,
+                    f1Score: 0.845,
+                    lastTrained: "2024-08-11T07:30:00Z",
+                    trainingDataSize: 15420,
+                    status: "backup"
+                }
+            ],
+            overallStats: {
+                totalPredictions: 2847,
+                correctPredictions: 2658,
+                averageConfidence: 0.847,
+                dailyPredictions: 156,
+                lastUpdate: "2024-08-14T14:30:00Z"
+            },
+            featureImportance: [
+                { feature: "Corrosion Rate", importance: 0.342, description: "Rate of corrosion measured in mm/year" },
+                { feature: "Pipeline Age", importance: 0.289, description: "Age of pipeline in years since installation" },
+                { feature: "Operating Pressure", importance: 0.234, description: "Current operating pressure as % of MAOP" },
+                { feature: "Soil Conditions", importance: 0.135, description: "Soil corrosivity and drainage characteristics" }
+            ]
+        };
+        logger_1.logger.info('Model performance metrics requested');
+        res.json(performance);
+    }
+    catch (error) {
+        logger_1.logger.error('Error fetching model performance:', error);
+        res.status(500).json({
+            error: 'Internal server error',
+            message: 'Failed to fetch model performance'
         });
     }
 }));

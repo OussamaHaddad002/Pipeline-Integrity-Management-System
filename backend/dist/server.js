@@ -35,7 +35,7 @@ class Server {
             },
             path: '/socket.io'
         });
-        this.port = parseInt(process.env.PORT || '5000');
+        this.port = parseInt(process.env.PORT || '3001');
         this.initializeMiddleware();
         this.initializeRoutes();
         this.initializeErrorHandling();

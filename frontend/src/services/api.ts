@@ -18,8 +18,12 @@ class ApiService {
   private api: AxiosInstance;
 
   constructor() {
+    // In development, directly connect to backend port 3001
+    // In production, use relative path which will work with proxy
+    const baseURL = window.location.hostname === 'localhost' ? 'http://localhost:3001/api' : '/api';
+    
     this.api = axios.create({
-      baseURL: '/api',
+      baseURL,
       timeout: 10000,
       headers: {
         'Content-Type': 'application/json',
@@ -82,8 +86,8 @@ class ApiService {
     pipelineId?: number; 
     page?: number; 
     limit?: number 
-  }): Promise<PaginatedResponse<RiskAssessment>> {
-    const response: AxiosResponse<PaginatedResponse<RiskAssessment>> = await this.api.get('/risk-assessments', { params });
+  }): Promise<{ assessments: RiskAssessment[]; count: number }> {
+    const response = await this.api.get('/risk-assessments', { params });
     return response.data;
   }
 
@@ -98,6 +102,16 @@ class ApiService {
   }
 
   // Prediction endpoints
+  async getPredictions(params?: { pipelineId?: number }): Promise<{ success: boolean; data: Prediction[] }> {
+    const response = await this.api.get('/predictions', { params });
+    return response.data;
+  }
+
+  async getModelPerformance(): Promise<any> {
+    const response = await this.api.get('/predictions/model-performance');
+    return response.data;
+  }
+
   async calculatePrediction(pipelineId: number): Promise<Prediction> {
     const response: AxiosResponse<ApiResponse<Prediction>> = await this.api.post('/predictions/calculate', { pipelineId });
     return response.data.data;

@@ -25,24 +25,21 @@ export interface Pipeline {
 }
 
 export interface RiskFactor {
-  id: number;
-  pipelineId: number;
-  type: 'corrosion' | 'depth' | 'soil' | 'pressure' | 'age' | 'temperature';
+  type: string;
   value: number;
-  severityLevel: 1 | 2 | 3 | 4 | 5;
-  location?: {
-    type: 'Point';
-    coordinates: [number, number];
-  };
-  recordedDate: string;
+  severityLevel: number;
+  description: string;
 }
 
 export interface RiskAssessment {
   id: number;
   pipelineId: number;
+  pipelineName: string;
   overallRiskScore: number;
   riskLevel: 'low' | 'medium' | 'high' | 'critical';
   assessmentDate: string;
+  nextInspectionDue: string;
+  inspector: string;
   factorsConsidered: RiskFactor[];
   recommendations: string[];
 }

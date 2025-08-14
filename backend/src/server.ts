@@ -49,7 +49,7 @@ class Server {
       },
       path: '/socket.io'
     });
-    this.port = parseInt(process.env.PORT || '5000');
+    this.port = parseInt(process.env.PORT || '3001');
 
     this.initializeMiddleware();
     this.initializeRoutes();
@@ -114,13 +114,20 @@ class Server {
     // Apply authentication middleware to protected routes
     this.app.use('/api', authMiddleware);
 
+    // Debug logging for route mounting
+    console.log('Mounting API routes...');
+    console.log('Pipeline routes:', typeof pipelineRoutes);
+    console.log('Dashboard routes:', typeof dashboardRoutes);
+
     // API routes
-    this.app.use('/pipelines', pipelineRoutes);
-    this.app.use('/risk-assessments', riskAssessmentRoutes);
-    this.app.use('/predictions', predictionRoutes);
-    this.app.use('/spatial', spatialRoutes);
-    this.app.use('/data', dataRoutes);
-    this.app.use('/dashboard', dashboardRoutes);
+    this.app.use('/api/pipelines', pipelineRoutes);
+    this.app.use('/api/risk-assessments', riskAssessmentRoutes);
+    this.app.use('/api/predictions', predictionRoutes);
+    this.app.use('/api/spatial', spatialRoutes);
+    this.app.use('/api/data', dataRoutes);
+    this.app.use('/api/dashboard', dashboardRoutes);
+
+    console.log('All API routes mounted successfully');
 
     // Catch-all for undefined routes
     this.app.all('*', (req, res) => {

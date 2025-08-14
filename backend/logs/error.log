@@ -1583,3 +1583,27 @@
   message: 'Error 401: Access token is required',
   timestamp: '2025-08-14 14:32:08'
 }
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:43:58'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:58:12'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:59:08'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 15:03:59'
+}

@@ -1,0 +1,3072 @@
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 12:23:36'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 12:23:36'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:31:24)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:42:28)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:72:25)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\server.js:109:13)',
+  timestamp: '2025-08-14 12:23:36'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 12:24:29'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 12:24:29'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 12:24:29'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 13:51:53'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 13:51:53'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 13:51:53'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 13:52:27'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 13:52:27'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'Database connection failed SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string',
+  stack: 'Error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 13:52:27'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 13:52:38'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 13:52:38'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'error',
+  message: 'Database connection failed SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string',
+  stack: 'Error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 13:52:38'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 13:53:11'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 13:53:11'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 13:53:11'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 13:54:07'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 13:54:07'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 13:54:07'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 13:54:28'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 13:54:28'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 13:54:28'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:02:27'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:02:27'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:31:24)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:42:28)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:72:25)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\server.js:109:13)',
+  timestamp: '2025-08-14 14:02:27'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:03:14'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:03:14'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:31:24)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:42:28)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\config\\database.js:72:25)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\server.js:109:13)',
+  timestamp: '2025-08-14 14:03:15'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:04:36'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:04:36'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:42:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:53:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:87:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 14:04:36'
+}
+{
+  service: 'pipeline-risk-api',
+  host: 'localhost',
+  port: 5432,
+  database: 'pipeline_risk_db',
+  user: 'postgres',
+  password: 'SET',
+  level: 'info',
+  message: 'Database config:',
+  timestamp: '2025-08-14 14:08:55'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:08:55'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:08:55'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:50:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:61:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:95:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 14:08:55'
+}
+{
+  service: 'pipeline-risk-api',
+  host: 'localhost',
+  port: 5432,
+  database: 'pipeline_risk_db',
+  user: 'postgres',
+  password: 'SET',
+  level: 'info',
+  message: 'Database config:',
+  timestamp: '2025-08-14 14:10:24'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:10:24'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:10:24'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:50:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:61:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:95:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 14:10:24'
+}
+{
+  service: 'pipeline-risk-api',
+  host: 'localhost',
+  port: 5432,
+  database: 'pipeline_risk_db',
+  user: 'postgres',
+  password: 'SET',
+  level: 'info',
+  message: 'Database config:',
+  timestamp: '2025-08-14 14:11:09'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:11:09'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:11:09'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:50:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:61:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:95:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 14:11:09'
+}
+{
+  service: 'pipeline-risk-api',
+  level: 'info',
+  message: 'Database config:',
+  timestamp: '2025-08-14 14:14:17'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:14:17'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:14:17'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:50:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:61:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:95:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 14:14:17'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:14:34'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:14:34'
+}
+{
+  service: 'pipeline-risk-api',
+  length: 128,
+  name: 'error',
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed',
+  level: 'error',
+  message: "Database connection failed authentification par mot de passe �chou�e pour l'utilisateur  � postgres �",
+  stack: "error: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �\n" +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\pg-pool\\index.js:45:11\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async Database.query (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:50:20)\n' +
+    '    at async Database.testConnection (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:61:22)\n' +
+    '    at async connectDatabase (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\config\\database.ts:95:23)\n' +
+    '    at async Server.start (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\src\\server.ts:145:7)',
+  timestamp: '2025-08-14 14:14:34'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45',
+  level: 'info',
+  message: 'Database connection successful'
+}
+{
+  message: 'PostGIS extensions enabled',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:16:45'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:18:02 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:18:02 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:18:02 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:18:02 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  message: 'Client connected: MzmGNQipg5LDGzG5AAAC',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:02'
+}
+{
+  message: 'Received SIGINT. Shutting down gracefully...',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:26'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45',
+  level: 'info',
+  message: 'Database connection successful'
+}
+{
+  message: 'PostGIS extensions enabled',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:45'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:56'
+}
+{
+  message: 'Client connected: mBkZl-QK94mza94OAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:57'
+}
+{
+  message: 'Received SIGINT. Shutting down gracefully...',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:18:58'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11',
+  level: 'info',
+  message: 'Database connection successful'
+}
+{
+  message: 'PostGIS extensions enabled',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:11'
+}
+{
+  message: 'Received SIGINT. Shutting down gracefully...',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:27'
+}
+{
+  message: 'Could not close connections in time, forcefully shutting down',
+  level: 'error',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:28'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37',
+  level: 'info',
+  message: 'Database connection successful'
+}
+{
+  message: 'PostGIS extensions enabled',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  message: 'Database initialized successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:37'
+}
+{
+  message: 'Client connected: H7a8C1MHGVzbbpPMAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:19:38'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; fr-FR) WindowsPowerShell/5.1.26100.4202',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:20:00'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:20:00 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; fr-FR) WindowsPowerShell/5.1.26100.4202"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:20:00'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:20:02'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:20:02 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:20:02'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::ffff:127.0.0.1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:20:53'
+}
+{
+  message: '::ffff:127.0.0.1 - - [14/Aug/2025:13:20:53 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:20:53'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:02'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:02 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:02'
+}
+{
+  message: 'Client disconnected: H7a8C1MHGVzbbpPMAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:05'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:06 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:06 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  message: 'Client connected: q_RS5nujexBfeRKsAAAD',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:06 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:06 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:06'
+}
+{
+  message: 'Client disconnected: q_RS5nujexBfeRKsAAAD',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:18 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:18 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:18 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:18 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  message: 'Client connected: _TWf-PWdmK_Nz7beAAAF',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:18'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:21:48'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:21:48 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:21:48'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:22:18'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:22:18 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:22:18'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:22:48'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:22:48 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:22:48'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:25:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:23:18'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:23:18 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:23:18'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:24:15'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:15'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:15'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:15'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:15'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:15'
+}
+{
+  message: 'Client connected: QBziBEvgXagSoWGVAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:42'
+}
+{
+  message: 'Client disconnected: QBziBEvgXagSoWGVAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:46'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:24:48 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:24:48 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:24:48 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  message: 'Client connected: OqogQRXmXcIjrBEsAAAE',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:24:48 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:24:48'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:25:18'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:25:18 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:18'
+}
+{
+  message: 'Client disconnected: OqogQRXmXcIjrBEsAAAE',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:20'
+}
+{
+  message: 'Client connected: Mwe5Og64PZHpjSBrAAAG',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:26'
+}
+{
+  message: 'Client disconnected: Mwe5Og64PZHpjSBrAAAG',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:29'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:25:30 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:25:30 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:25:30 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:25:30 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  message: 'Client connected: 8TI11Tm9vblhF4HkAAAJ',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:25:30'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:26:00'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:26:00 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:00'
+}
+{
+  message: 'Client disconnected: 8TI11Tm9vblhF4HkAAAJ',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:04'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:26:13'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:13'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:13'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:13'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:13'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:13'
+}
+{
+  message: 'Client connected: 86-H5p-b9GWzxN6kAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:28'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:26:30 +0000] "GET /api/dashboard/metrics HTTP/1.1" 200 153 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:30'
+}
+{
+  message: 'Client disconnected: 86-H5p-b9GWzxN6kAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:43'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:26:44 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 200 745 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:44'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:26:44 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:44'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:26:44 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:44'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:26:44 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:44'
+}
+{
+  message: 'Client connected: Mt9gb02G8Zil3Dm8AAAD',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:26:44'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:07 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 200 746 "http://localhost:3000/pipelines" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:07'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:07 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/pipelines" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:07'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:21 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/pipelines" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:21'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:21 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/pipelines" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:21'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:23 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:23'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:23 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:23'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:23 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:23'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:27:23 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:23'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:27:32'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:32'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:32'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:32'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:32'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:32'
+}
+{
+  message: 'Client connected: SxSTqc5iuHC7gtlcAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:33'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:27:51'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:51'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:51'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:51'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:51'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:51'
+}
+{
+  message: 'Client connected: bFsQUPmIEOMNVVy0AAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:27:53'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:28:19 +0000] "GET /api/dashboard/metrics HTTP/1.1" 200 153 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:28:19'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:29:25'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:25'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:25'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:25'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:25'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:25'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:29:43 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:29:43 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:29:43 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:29:43 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  message: 'Client connected: Niw4x3EiSpZVE8MjAAAC',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:29:43'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:13'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:13 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:13'
+}
+{
+  message: 'Client disconnected: Niw4x3EiSpZVE8MjAAAC',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:36'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:37 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:37 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:37 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:37 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  message: 'Client connected: BBAQgrndT0eAudBJAAAF',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:37'
+}
+{
+  message: 'Client disconnected: BBAQgrndT0eAudBJAAAF',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:56 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:56 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:56 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  message: 'Client connected: YHDuOmKjUcohWQ4mAAAH',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:30:56 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:30:56'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:31:26'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:31:26 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:31:26'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:31:56'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:31:56 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:31:56'
+}
+{
+  message: 'Client disconnected: YHDuOmKjUcohWQ4mAAAH',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:04 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:04 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:04 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:04 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  message: 'Client connected: Wx7MIarwEioDezmlAAAJ',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:04'
+}
+{
+  message: 'Client disconnected: Wx7MIarwEioDezmlAAAJ',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:08 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:08 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/dashboard/metrics',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:08 +0000] "GET /api/dashboard/metrics HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  service: 'pipeline-risk-api',
+  error: 'Error: Access token is required\n' +
+    '    at createError (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\errorHandler.js:24:19)\n' +
+    '    at authMiddleware (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\dist\\middleware\\auth.js:28:50)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\body-parser\\lib\\types\\urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\yacki\\Desktop\\Portfolio\\IRM Internship\\Project 1\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)',
+  url: '/api/pipelines?page=1&limit=5',
+  method: 'GET',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+  level: 'error',
+  message: 'Error 401: Access token is required',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:08 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 401 1584 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  message: 'Client connected: cZjTD7KnUkKtoMNyAAAL',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:08'
+}
+{
+  message: 'Received SIGINT. Shutting down gracefully...',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:13'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 14:32:38'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:38'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:38'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:38'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:38'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:38'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:55 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:55'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:55 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 200 745 "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:55'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:55 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:55'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:32:55 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:55'
+}
+{
+  message: 'Client connected: MeAC1K-q1m__y4uPAAAC',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:32:55'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:33:25 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:33:25'
+}
+{
+  message: '::1 - - [14/Aug/2025:13:33:55 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 14:33:55'
+}

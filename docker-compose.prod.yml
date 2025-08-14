@@ -1,0 +1,248 @@
+version: '3.8'
+
+services:
+  # PostgreSQL database with PostGIS extension
+  database:
+    image: postgis/postgis:15-3.4
+    container_name: pipeline-risk-db-prod
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DATABASE_USER} -d ${DATABASE_NAME}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    # Don't expose port in production - only internal access
+    expose:
+      - "5432"
+
+  # Backend Node.js API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: production
+    container_name: pipeline-risk-api-prod
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      DATABASE_URL: postgresql://${DATABASE_USER}:${DATABASE_PASSWORD}@database:5432/${DATABASE_NAME}
+      JWT_SECRET: ${JWT_SECRET}
+      FRONTEND_URL: ${FRONTEND_URL}
+      LOG_LEVEL: warn
+      PYTHON_API_URL: http://ai-model:8000
+      REDIS_URL: redis://cache:6379
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    volumes:
+      - ./backend/logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    # Multiple instances for load balancing
+    deploy:
+      replicas: 2
+
+  # Frontend React application
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: production
+    container_name: pipeline-risk-frontend-prod
+    environment:
+      NODE_ENV: production
+    depends_on:
+      - backend
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    # Multiple instances for load balancing
+    deploy:
+      replicas: 2
+
+  # Python AI/ML service
+  ai-model:
+    build:
+      context: ./ai-model
+      dockerfile: Dockerfile
+    container_name: pipeline-risk-ai-prod
+    environment:
+      FLASK_ENV: production
+      DATABASE_URL: postgresql://${DATABASE_USER}:${DATABASE_PASSWORD}@database:5432/${DATABASE_NAME}
+      MODEL_PATH: /app/models
+      LOG_LEVEL: warn
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    volumes:
+      - ai_models:/app/models
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    # Multiple instances for model serving
+    deploy:
+      replicas: 2
+
+  # Redis for caching and session storage
+  cache:
+    image: redis:7-alpine
+    container_name: pipeline-risk-cache-prod
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx load balancer and reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: pipeline-risk-proxy-prod
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.prod.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - nginx_logs:/var/log/nginx
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Prometheus monitoring
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: pipeline-risk-metrics
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    expose:
+      - "9090"
+
+  # Grafana dashboards
+  grafana:
+    image: grafana/grafana:latest
+    container_name: pipeline-risk-dashboards
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD}
+      GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    depends_on:
+      - prometheus
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    expose:
+      - "3000"
+
+  # Log aggregation
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.8.0
+    container_name: pipeline-risk-search
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+
+  # Log shipping
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.8.0
+    container_name: pipeline-risk-logstash
+    volumes:
+      - ./logging/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+      - ./backend/logs:/var/log/app:ro
+    depends_on:
+      - elasticsearch
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+
+  # Log visualization
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.8.0
+    container_name: pipeline-risk-logs
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    expose:
+      - "5601"
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  ai_models:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  elasticsearch_data:
+    driver: local
+  nginx_logs:
+    driver: local
+
+networks:
+  pipeline-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

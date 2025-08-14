@@ -1,0 +1,58 @@
+# Pipeline Risk Prediction Model Requirements
+# Python dependencies for the AI/ML pipeline failure prediction system
+
+# Core ML and Data Science
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# Model persistence
+joblib>=1.3.0
+
+# Data visualization (optional, for model analysis)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Web API integration
+requests>=2.31.0
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Database connectivity
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+
+# Configuration and utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Logging and monitoring
+structlog>=23.1.0
+
+# Advanced ML features (optional)
+xgboost>=1.7.0
+lightgbm>=4.0.0
+
+# Time series analysis
+statsmodels>=0.14.0
+
+# Feature engineering
+category-encoders>=2.6.0
+
+# Development and testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.7.0
+flake8>=6.0.0
+
+# Model validation and interpretation
+shap>=0.42.0
+eli5>=0.13.0
+
+# Production deployment
+gunicorn>=21.2.0
+uvicorn>=0.23.0
+
+# Monitoring and health checks
+prometheus-client>=0.17.0

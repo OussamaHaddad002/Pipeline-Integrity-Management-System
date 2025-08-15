@@ -15305,3 +15305,172 @@
   service: 'pipeline-risk-api',
   timestamp: '2025-08-14 18:47:51'
 }
+{
+  message: '::1 - - [14/Aug/2025:17:48:08 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:48:08'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:48:21 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:48:21'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:48:38 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:48:38'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:48:51 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:48:51'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:49:08 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:49:08'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:49:21 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:49:21'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:49:38 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:49:38'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:49:51 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:49:51'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:50:08 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:50:08'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:50:21 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:50:21'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:50:38 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:50:38'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:50:51 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:50:51'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:51:21 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:51:21'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:51:51 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:51:51'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:51:52 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:51:52'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:52:21 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:52:21'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:52:51 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.1 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:52:51'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:52:52 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:52:52'
+}
+{
+  message: 'Client disconnected: 3Yl0-XEjsnZkfQccAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:16'
+}
+{
+  message: 'Client disconnected: RkN8ry12iv1nmqUnAAAD',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:16'
+}
+{
+  message: '::1 - - [14/Aug/2025:17:53:18 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:18'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-14 18:53:21'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:21'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:21'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:21'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:21'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-14 18:53:21'
+}

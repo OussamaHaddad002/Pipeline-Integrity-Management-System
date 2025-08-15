@@ -270,7 +270,7 @@ export const Predictions: React.FC = () => {
               onClick={() => startNewPrediction()}
               className="bg-white text-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition-colors font-medium"
             >
-              🔮 Generate Prediction
+              Generate Prediction
             </button>
           </div>
         </div>
@@ -326,30 +326,30 @@ export const Predictions: React.FC = () => {
             { 
               label: 'Total Predictions', 
               value: predictions.length, 
-              icon: '🔮',
+              
               color: 'text-blue-600' 
             },
             { 
               label: 'Critical Risk', 
               value: predictions.filter(p => p.failureProbability >= 0.8).length, 
-              icon: '🚨',
+              
               color: 'text-red-600' 
             },
             { 
               label: 'High Confidence', 
               value: predictions.filter(p => p.confidenceScore >= 0.9).length, 
-              icon: '💎',
+              
               color: 'text-purple-600' 
             },
             { 
               label: 'Urgent Actions', 
               value: predictions.filter(p => getDaysUntilFailure(p.predictedFailureDate) < 90).length, 
-              icon: '⏰',
+              
               color: 'text-orange-600' 
             }
           ].map((stat, index) => (
             <div key={index} className="bg-gray-50 rounded-lg p-4 text-center">
-              <div className="text-2xl mb-1">{stat.icon}</div>
+              
               <div className={`text-xl font-bold ${stat.color}`}>
                 {stat.value}
               </div>

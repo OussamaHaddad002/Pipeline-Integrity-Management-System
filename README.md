@@ -2,20 +2,6 @@
 
 A comprehensive pipeline risk assessment platform designed for the oil & gas industry, featuring advanced engineering calculations, real-time monitoring, and AI-powered failure prediction. This system demonstrates modern software development capabilities specifically tailored for pipeline integrity challenges.
 
-> **🎯 Developed for IRM Systems Internship Application**  
-> *Showcasing expertise in pipeline assessment software, engineering calculations, and pragmatic field-ready solutions*
-
-## ✨ Live Demo
-
-# �️ Pipeline Integrity Management System
-
-A comprehensive pipeline risk assessment platform designed for the oil & gas industry, featuring advanced engineering calculations, real-time monitoring, and AI-powered failure prediction. This system demonstrates modern software development capabilities specifically tailored for pipeline integrity challenges.
-
-> **🎯 Developed for IRM Systems Internship Application**  
-> *Showcasing expertise in pipeline assessment software, engineering calculations, and pragmatic field-ready solutions*
-
-## ✨ Live Demo
-
 🌐 **Frontend**: http://localhost:3000  
 📡 **API**: http://localhost:3001  
 📊 **Interactive Dashboard** with real pipeline integrity assessments and predictive analytics
@@ -78,10 +64,6 @@ const riskAssessment = calculateIntegrityRisk({
 - **Industry-Standard Compliance** - Follows pipeline integrity management best practices
 - **Scalable Assessment Platform** - Designed to handle enterprise-level pipeline networks
 
-## 🎯 IRM Systems Internship Alignment
-
-### **🏗️ Pipeline Integrity Management Focus**
-This project directly addresses the core competencies sought by IRM Systems:
 
 #### **Software Development & Engineering**
 - ✅ **Frontend/Backend Programming** - Full-stack TypeScript development with modern frameworks
@@ -210,7 +192,7 @@ The system includes production-quality sample data representing real pipeline sc
 
 *Each record includes 30+ data points including geographic location, material specifications, environmental conditions, and maintenance history.*
 
-## � API Endpoints
+## API Endpoints
 
 ### **Pipeline Management**
 ```typescript
@@ -263,21 +245,20 @@ io.on('connection', (socket) => {
 1. Navigate to **http://localhost:3000**
 2. View the dashboard with 10 sample pipelines
 3. Click "Assess Risk" on any pipeline (e.g., TX-001)
-4. See detailed risk breakdown with realistic failure probabilities
+4. See detailed risk breakdown with failure probabilities
 5. Observe color-coded risk levels and contributing factors
 
 ### **🤖 AI Prediction Testing**
 1. Go to **Predictions** tab
 2. Select a pipeline from the dropdown (TX-001 through TX-010)
 3. Click "Generate AI Prediction"
-4. View realistic failure probability (0.1% - 1.0%)
+4. View failure probability (0.1% - 1.0%)
 5. Examine confidence scores and risk factor analysis
 
 ### **⚡ Real-time Updates Testing**
 1. Open the application in multiple browser tabs
 2. Generate a prediction in one tab
 3. Watch real-time updates appear in other tabs
-4. Observe WebSocket connectivity status indicators
 
 ## 🎯 Code Quality Features
 
@@ -300,7 +281,7 @@ interface PipelineRiskData {
 - **CORS Protection** - Configured for development and production
 - **Rate Limiting** - Prevent API abuse and ensure stability
 
-## � Deployment & Docker
+## Deployment & Docker
 
 ### **🐳 Docker Support (Optional)**
 For containerized deployment:
@@ -313,13 +294,6 @@ docker-compose up --build
 # - Frontend: http://localhost:3000  
 # - Backend: http://localhost:3001
 ```
-
-### **☁️ Production Deployment**
-Ready for deployment to:
-- **Heroku** - Direct GitHub integration
-- **Netlify/Vercel** - Frontend hosting
-- **AWS/Azure** - Full cloud deployment
-- **Digital Ocean** - VPS deployment
 
 ## 📁 Project Structure
 
@@ -349,192 +323,3 @@ pipeline-risk-dashboard/
 ├── 📄 README.md                # This file
 └── 📄 .gitignore               # Git ignore rules
 ```
-
-## 🛠️ Development Tips
-
-### **🔧 Backend Development**
-```bash
-# Watch mode for auto-restart
-npm run dev
-
-# Check API endpoints
-curl http://localhost:3001/api/risk-assessments
-
-# View real-time logs
-tail -f logs/application.log
-```
-
-### **🎨 Frontend Development**  
-```bash
-# Development server with hot reload
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-### **� Troubleshooting**
-- **Port Conflicts**: Change ports in package.json scripts if 3000/3001 are occupied
-- **CORS Issues**: Backend configured for http://localhost:3000 origin
-- **WebSocket Connection**: Check browser console for connection status
-- **CSV Parsing**: Sample data includes proper formatting examples
-
-## 🎯 Professional Skills Demonstrated
-
-This project showcases the exact competencies required for the IRM Systems internship:
-
-### **💻 Full-Stack Software Development**
-- ✅ **Frontend Programming** - Modern React with TypeScript, responsive design, professional UI/UX
-- ✅ **Backend Programming** - Node.js/Express API development with real-time capabilities  
-- ✅ **Engineering Calculations** - Multi-factor risk assessment algorithms and failure probability models
-- ✅ **Interface & Usability** - Field-ready design optimized for pipeline integrity specialists
-
-### **🧠 Pipeline Integrity Engineering**
-- ✅ **Assessment Management** - Comprehensive pipeline evaluation and risk prioritization systems
-- ✅ **Engineering Analytics** - Advanced data processing, statistical analysis, and predictive modeling
-- ✅ **Industry Knowledge** - Understanding of corrosion, wall loss, pressure analysis, and failure mechanisms
-- ✅ **Pragmatic Solutions** - Bridge between high-level engineering analysis and field operations
-
-### **🏗️ Software Architecture & Implementation**
-- ✅ **Modular System Design** - Scalable architecture suitable for enterprise pipeline networks
-- ✅ **Type-Safe Development** - TypeScript implementation ensuring reliability in critical applications
-- ✅ **Real-time Communication** - WebSocket integration for live monitoring and assessment updates
-- ✅ **Production-Ready Code** - Comprehensive error handling, logging, and security implementation
-
-### **🎨 Professional Interface Design**  
-- ✅ **User-Centered Design** - Optimized for both office analysis and field operations
-- ✅ **Data Visualization** - Interactive charts and real-time pipeline status displays
-- ✅ **Responsive Implementation** - Cross-platform compatibility for various deployment scenarios
-- ✅ **Industry-Standard Workflows** - Designed to integrate with existing pipeline management processes
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how to get started:
-
-### **🔄 Development Workflow**
-1. **Fork** the repository on GitHub
-2. **Clone** your fork locally
-3. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-4. **Make** your changes with proper TypeScript types
-5. **Test** your changes thoroughly  
-6. **Commit** with descriptive messages (`git commit -m 'Add amazing feature'`)
-7. **Push** to your branch (`git push origin feature/amazing-feature`)
-8. **Open** a Pull Request with detailed description
-
-### **📝 Code Standards**
-- ✅ Use TypeScript for all new code
-- ✅ Follow ESLint configuration
-- ✅ Add JSDoc comments for functions
-- ✅ Include error handling
-- ✅ Update README for new features
-
-### **🧪 Testing Requirements**
-- ✅ Test API endpoints manually
-- ✅ Verify TypeScript compilation  
-- ✅ Check responsive design
-- ✅ Validate real-time updates
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Need Help?
-
-### **🐛 Common Issues & Solutions**
-
-**❌ "Port 3000 already in use"**
-```bash
-# Kill the process using port 3000
-npx kill-port 3000
-# Or change the port in package.json
-```
-
-**❌ "Cannot connect to backend"**
-```bash
-# Verify backend is running
-curl http://localhost:3001/api/risk-assessments
-# Check backend terminal for errors
-```
-
-**❌ "WebSocket connection failed"**
-```bash
-# Check browser console for connection status
-# Verify both frontend and backend are running
-# Ensure no firewall blocking connections
-```
-
-**❌ "CSV data not loading"**
-```bash
-# Verify sample data file exists
-ls backend/src/data/pipeline_test_data.csv
-# Check backend logs for parsing errors
-```
-
-### **💬 Get Support**
-- 📧 **Email**: [your.email@domain.com](mailto:your.email@domain.com)
-- � **Issues**: [GitHub Issues](https://github.com/yourusername/pipeline-risk-dashboard/issues)
-- � **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- 🌟 **Portfolio**: [Your Portfolio Website](https://yourwebsite.com)
-
-## 🏆 Acknowledgments
-
-### **🙏 Special Thanks**
-- **IRM Systems** for providing industry domain expertise and internship opportunity
-- **React Team** for the excellent frontend framework and documentation  
-- **Node.js Community** for the robust backend ecosystem
-- **TypeScript Team** for type safety and developer experience improvements
-- **Open Source Community** for the amazing libraries and tools used in this project
-
-### **📚 Educational Resources**
-- Pipeline integrity management industry standards
-- Risk assessment methodologies in oil & gas
-- Machine learning applications in industrial safety
-- Real-time data visualization best practices
-
----
-
-## 🌟 **Pipeline Integrity Management System**
-
-### **🎯 IRM Systems Internship Application**
-This application directly demonstrates the technical capabilities and pipeline industry knowledge required for the IRM Systems software development internship:
-
-#### **🔧 Technical Deliverables**
-- ⚛️ **Modern Frontend Development** - React/TypeScript interface optimized for pipeline integrity specialists
-- 🟢 **Robust Backend Architecture** - Node.js/Express API with advanced engineering calculation capabilities  
-- 📊 **Engineering Calculations** - Multi-factor risk assessment algorithms and failure probability models
-- 🤖 **Predictive Analytics** - AI-powered integrity assessment with industry-standard methodologies
-- 🎨 **Professional Interface Design** - User experience optimized for both field operations and office analysis
-- ⚡ **Real-time Monitoring** - Live pipeline status tracking and assessment updates
-
-#### **🏗️ Pipeline Industry Expertise**
-- **Assessment & Repair Management** - Comprehensive risk evaluation and intervention prioritization
-- **Engineering Analytics** - Advanced data processing connecting high-level analysis with field operations
-- **Industry-Standard Implementation** - Follows pipeline integrity management best practices and methodologies
-- **Scalable Architecture** - Foundation suitable for enterprise-level pipeline network management
-
-### **🚀 Quick Setup & Demonstration**
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/pipeline-integrity-system.git
-cd pipeline-integrity-system
-
-# Start backend services
-cd backend && npm install && npm run dev &
-
-# Start frontend interface
-cd ../frontend && npm install && npm run dev
-
-# View live demo at http://localhost:3000
-```
-
-### **💼 Contact Information**
-**Applying for:** Software Development Internship - IRM Systems  
-**Focus Areas:** Frontend/Backend Programming, Engineering Calculations, Interface Design  
-**Objective:** Upgrade in-house software and develop new pipeline integrity management applications
-
----
-
-**🛢️ Built for Pipeline Integrity Management | Demonstrating Software Development Excellence for IRM Systems**

@@ -64,6 +64,28 @@ const riskAssessment = calculateIntegrityRisk({
 - **Industry-Standard Compliance** - Follows pipeline integrity management best practices
 - **Scalable Assessment Platform** - Designed to handle enterprise-level pipeline networks
 
+
+#### **Software Development & Engineering**
+- ✅ **Frontend/Backend Programming** - Full-stack TypeScript development with modern frameworks
+- ✅ **Engineering Calculations Implementation** - Advanced risk assessment algorithms and failure probability models
+- ✅ **Interface & Usability Improvement** - User-centered design optimized for pipeline integrity specialists
+- ✅ **Software Architecture** - Scalable, maintainable codebase suitable for enterprise pipeline management
+
+#### **Pipeline Integrity Expertise**
+- ✅ **Assessment & Repair Intervention Management** - Comprehensive risk evaluation and prioritization systems
+- ✅ **High-Level Engineering & Analytics** - Advanced data processing and predictive modeling capabilities
+- ✅ **Pragmatic Field Experience Integration** - Interface design that bridges engineering analysis with field operations
+- ✅ **Pipeline Industry Knowledge** - Understanding of corrosion, wall loss, pressure analysis, and failure mechanisms
+
+### **🔧 Technical Deliverables**
+- **Modern Web Application** - Production-ready pipeline integrity management system
+- **Engineering Calculation Engine** - Implements industry-standard risk assessment methodologies
+- **Real-time Monitoring Dashboard** - Live pipeline status tracking and alert management
+- **Data Processing Pipeline** - CSV import/export for integration with existing inspection systems
+- **Scalable Architecture** - Foundation for enterprise-level pipeline network management
+
+> *"The ability to connect high level engineering & analytics with pragmatic feet-on-the-ground field experience"* - This project demonstrates exactly this capability through its combination of advanced algorithms and field-ready interface design.
+
 ## 🛠️ Technology Stack & Engineering Implementation
 
 ### **Backend Engineering** ⚙️  
@@ -144,7 +166,7 @@ The system includes production-quality sample data representing real pipeline sc
 
 *Each record includes 30+ data points including geographic location, material specifications, environmental conditions, and maintenance history.*
 
-## � API Endpoints
+## API Endpoints
 
 ### **Pipeline Management**
 ```typescript
@@ -197,21 +219,20 @@ io.on('connection', (socket) => {
 1. Navigate to **http://localhost:3000**
 2. View the dashboard with 10 sample pipelines
 3. Click "Assess Risk" on any pipeline (e.g., TX-001)
-4. See detailed risk breakdown with realistic failure probabilities
+4. See detailed risk breakdown with failure probabilities
 5. Observe color-coded risk levels and contributing factors
 
 ### **🤖 AI Prediction Testing**
 1. Go to **Predictions** tab
 2. Select a pipeline from the dropdown (TX-001 through TX-010)
 3. Click "Generate AI Prediction"
-4. View realistic failure probability (0.1% - 1.0%)
+4. View failure probability (0.1% - 1.0%)
 5. Examine confidence scores and risk factor analysis
 
 ### **⚡ Real-time Updates Testing**
 1. Open the application in multiple browser tabs
 2. Generate a prediction in one tab
 3. Watch real-time updates appear in other tabs
-4. Observe WebSocket connectivity status indicators
 
 ## 🎯 Code Quality Features
 
@@ -234,7 +255,7 @@ interface PipelineRiskData {
 - **CORS Protection** - Configured for development and production
 - **Rate Limiting** - Prevent API abuse and ensure stability
 
-## � Deployment & Docker
+## Deployment & Docker
 
 ### **🐳 Docker Support (Optional)**
 For containerized deployment:

@@ -15474,3 +15474,659 @@
   service: 'pipeline-risk-api',
   timestamp: '2025-08-14 18:53:21'
 }
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-19 15:34:05'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:05'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:05'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:05'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:05'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:05'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:21 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:21'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:21 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:21'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:21 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 200 374 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:21'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:21 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:21'
+}
+{
+  message: 'Client connected: wckQ1u7rGkkiQqX1AAAC',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:21'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:32 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:32'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:32 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:32'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:32 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:32'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:34:32 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:34:32'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:35:02 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:35:02'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:35:32 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:35:32'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:36:02 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:36:02'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:36:32 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:36:32'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:37:02 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:37:02'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:37:32 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:37:32'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:38:17 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:38:17'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:39:17 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:39:17'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:40:17 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:40:17'
+}
+{
+  service: 'pipeline-risk-api',
+  NODE_ENV: 'development',
+  PORT: '3001',
+  FRONTEND_URL: 'http://localhost:3000',
+  LOG_LEVEL: 'info',
+  DATABASE_CONNECTED: true,
+  JWT_SECRET_SET: true,
+  PYTHON_API_URL: 'Not configured',
+  level: 'info',
+  message: 'Environment configuration validated',
+  timestamp: '2025-08-19 15:41:11'
+}
+{
+  message: 'WebSocket service initialized',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:41:11'
+}
+{
+  message: 'Database connection skipped for startup',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:41:11'
+}
+{
+  message: 'Server is running on port 3001',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:41:11'
+}
+{
+  message: 'Environment: development',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:41:11'
+}
+{
+  message: 'Frontend URL: http://localhost:3000',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:41:11'
+}
+{
+  message: 'Client connected: 0-wSjnTQu2kRFieeAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:41:12'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:41:17 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:41:17'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:42:17 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:42:17'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:01 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:01'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:33 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 200 374 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:33'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:33 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:33'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:34 +0000] "GET /api/risk-assessments HTTP/1.1" 200 690 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:34'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:34 +0000] "GET /api/risk-assessments HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:34'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:36 +0000] "GET /api/predictions HTTP/1.1" 200 959 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:36'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:36 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:36'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:36 +0000] "GET /api/predictions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:36'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:36 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:36'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:38 +0000] "GET /api/predictions/csv-data HTTP/1.1" 200 8933 "http://localhost:3000/predictions" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:38'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:43 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:43 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:43 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:43 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:53 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:53'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:43:53 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:43:53'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:44:08 +0000] "POST /api/pipelines HTTP/1.1" 201 396 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:44:08'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:44:08 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 200 705 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:44:08'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:46:19 +0000] "POST /api/pipelines HTTP/1.1" 201 387 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:46:19'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:46:19 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 200 1027 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:46:19'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:46:25 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:46:25'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:46:25 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:46:25'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:46:25 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 200 1027 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:46:25'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:46:25 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:46:25'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:46:55 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:46:55'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:25 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:25'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:37 +0000] "GET /api/risk-assessments HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:37'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:37 +0000] "GET /api/risk-assessments HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:37'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:43 +0000] "GET /api/predictions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:43 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:43 +0000] "GET /api/predictions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:43 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:43'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:45 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:45'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:45 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:45'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:45 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:45'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:47:45 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:47:45'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:15 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:15'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:23 +0000] "GET /api/predictions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:23'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:23 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:23'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:23 +0000] "GET /api/predictions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:23'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:23 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:23'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:26 +0000] "GET /api/pipelines HTTP/1.1" 200 1027 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:26'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:41 +0000] "POST /api/predictions HTTP/1.1" 201 962 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:41'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:48:41 +0000] "GET /api/predictions HTTP/1.1" 200 1865 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:48:41'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:50:28 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:50:28'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:50:28 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:50:28'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:50:28 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:50:28'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:50:28 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:50:28'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:50:58 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:50:58'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:20 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:20'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:20 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:20'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:36 +0000] "POST /api/pipelines HTTP/1.1" 201 387 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:36'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:36 +0000] "GET /api/pipelines?page=1&limit=20 HTTP/1.1" 200 1349 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:36'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:39 +0000] "GET /api/risk-assessments HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:39'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:39 +0000] "GET /api/risk-assessments HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:39'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:42 +0000] "GET /api/pipelines HTTP/1.1" 200 1349 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:42'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:53 +0000] "POST /api/risk-assessments HTTP/1.1" 201 706 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:53'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:53 +0000] "GET /api/risk-assessments HTTP/1.1" 200 1332 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:53'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:51:58 +0000] "GET /api/risk-assessments/csv-data HTTP/1.1" 200 8927 "http://localhost:3000/risk-assessments" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:51:58'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:00 +0000] "POST /api/risk-assessments/assess-csv/TX-002 HTTP/1.1" 201 743 "http://localhost:3000/risk-assessments" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:00'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:00 +0000] "GET /api/risk-assessments HTTP/1.1" 200 1995 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:00'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:05 +0000] "GET /api/predictions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:05'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:05 +0000] "GET /api/predictions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:05'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:05 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:05'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:05 +0000] "GET /api/predictions/model-performance HTTP/1.1" 404 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:05'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:08 +0000] "GET /api/pipelines HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:08'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:31 +0000] "POST /api/predictions HTTP/1.1" 201 924 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:31'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:52:31 +0000] "GET /api/predictions HTTP/1.1" 200 2720 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:52:31'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:53:17 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:53:17'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:53:17 +0000] "GET /api/dashboard/metrics HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:53:17'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:53:17 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 200 1349 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:53:17'
+}
+{
+  message: '::1 - - [19/Aug/2025:14:53:17 +0000] "GET /api/pipelines?page=1&limit=5 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:53:17'
+}
+{
+  message: 'Client disconnected: 0-wSjnTQu2kRFieeAAAB',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:53:24'
+}
+{
+  message: 'Received SIGINT. Shutting down gracefully...',
+  level: 'info',
+  service: 'pipeline-risk-api',
+  timestamp: '2025-08-19 15:53:32'
+}

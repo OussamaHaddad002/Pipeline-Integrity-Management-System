@@ -125,7 +125,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   </svg>
                 </div>
                 <div>
-                  <h1 className="text-lg font-bold text-white">IRM Pipeline</h1>
+                  <h1 className="text-lg font-bold text-white">Integrity Pipeline</h1>
                   <p className="text-xs text-blue-100">Risk Assessment</p>
                 </div>
               </div>
